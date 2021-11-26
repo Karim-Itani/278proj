@@ -1,0 +1,212 @@
+.sidehoverbar a {
+    background-color: grey;
+    position: absolute;
+    font-size: 20px;
+    text-decoration: none;
+    Color: white;
+    padding: 10px;
+    border-radius: 0px 25px 25px 0px;
+    left: -190px;
+    transition: 0.5s;
+    opacity: 0.8;
+}
+
+
+/* Hover effect on sidebar */
+
+.sidehoverbar a:hover {
+    left: 0px;
+    opacity: 1;
+    background-color: #4CAF50;
+    z-index: 999;
+}
+
+
+/* float icons*/
+
+.sidehoverbar i {
+    float: right;
+}
+
+
+/* defining position of each nav bar */
+
+.home {
+    top: 50px;
+    width: 210px;
+    height: 30px;
+}
+
+.about {
+    top: 110px;
+    width: 210px;
+    height: 30px;
+}
+
+.useful {
+    top: 170px;
+    width: 210px;
+    height: 30px;
+}
+
+.gallery {
+    top: 230px;
+    width: 210px;
+    height: 30px;
+}
+
+.categories {
+    top: 290px;
+    width: 210px;
+    height: 30px;
+}
+
+.glossary {
+    top: 350px;
+    width: 210px;
+    height: 30px;
+}
+
+.contact {
+    top: 410px;
+    width: 210px;
+    height: 30px;
+}
+
+
+/* content margin */
+
+.hoverable-topic {
+    margin-left: 55px;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #36a327;
+    padding: 20px 10px;
+}
+
+
+/* Style the header links */
+
+.header a {
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.header1 {
+    display: block;
+    color: #000;
+    font-size: 13px;
+}
+
+.header2 {
+    display: block;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header3 {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menubutton {
+    float: left;
+}
+
+.useful-links {
+    float: right;
+    margin-right: 250px;
+}
+
+.useful-links p a {
+    color: rgb(2, 1, 12);
+    text-decoration: none;
+}
+
+.useful-links a:hover {
+    color: #f82a06;
+}
+
+.navigation_links li {
+    list-style: none;
+    float: left;
+    width: 10px;
+    margin-left: 14px;
+}
+
+.navigation_links li.first {
+    margin-left: 0px !important;
+}
+
+.navigation_links a {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.navigation_links a:hover {
+    color: #1a7b45;
+}
+
+footer {
+    width: 1500px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    z-index: -100;
+    background-color: #36a327;
+    margin-bottom: -16750px;
+}
+
+.footer_content {
+    margin-top: 200px;
+    height: 112px;
+    width: 1150px;
+    float: right;
+}
+
+footer .footer_menu {
+    height: 40px;
+    float: right;
+    margin-right: 88px;
+    clear: both;
+}
+
+footer .footer_menu li {
+    float: left;
+    list-style: none;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    margin-left: 30px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
