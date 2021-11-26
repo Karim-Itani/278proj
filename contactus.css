@@ -1,4 +1,16 @@
-#comment{padding-bottom: 250px;width: 350px;}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  width: 1300px;
+  margin: 0px auto;
+  padding: 0px;
+  font: 14px Arial;
+}
+
 
 label {
     width:180px;
@@ -23,7 +35,7 @@ input, label {
     margin-top: 20px;
     
     }
-.alex{color:  red;text-align:center;padding-top:0px;font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: italic;margin-left: 425px;}
+.alex{display:block;color:red;text-align:center;padding-top:0px;font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: italic;margin-bottom: 10px;}
 /* styling sidebar */
 .sidehoverbar a {
     background-color: grey;
@@ -158,3 +170,4 @@ input, label {
 .button1 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px;}
 .button2 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
 .button3 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
+
