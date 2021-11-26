@@ -46,15 +46,21 @@
         </a>
         
         </div>
-    <header>
-      <P><u>Contact Us</u></P>
-    </header>
+    
 
     <body>
+    <div id="button">
+        <a href='type here'><button class="button1">Search By Name</button></a>
+        <a href='type here'><button class="button2">Search By Criteria</button></a>
+        <a href='type here'><button class="button3">Plant identification</button></a>
+    </div>
     <div class="all">
+        <header>
+            <P class="alex"><u>Contact Us</u></P>
+          </header>
         <br>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" >
+        <input type="text" id="name" name="name" required >
         </br>
         <br>
         <label for="company">company:</label>
@@ -80,7 +86,44 @@
         <label for="comment">comments:</label>
         <input type="text" id="comment" name="comment" >
         </br>
+        <div class="submit"><input type="submit" value="submit"></div>
+            
+    <div class="hawdy">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3" id="form_container">
+                
+                <form role="form" method="post" id="reused_form">
+        
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                         
+        
+                                    <div class="row" style="margin-bottom:30px;">
+                          <div class="col-sm-5">
+                          <img src="captcha.php" id="captcha_image"/>
+                          <br/> <a id="captcha_reload" href="#">reload</a>
+                          </div>
+                          <div class="col-sm-6">
+                       
+                          <input type="text" class="form-control" required id="captcha" name="captcha" >
+                          </div>
+                        </div>
+        
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button type="submit" class="btn btn-lg btn-default pull-right" >Send →</button>
+                        </div>
+                    </div>
     </div>
+        
+                
+               
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
       
     </head>

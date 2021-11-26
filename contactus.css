@@ -15,15 +15,15 @@ input, label {
     background-color: lightgreen;
     width: 600px;
     border: 5px solid green;
-    padding: 20px;
+    padding: 40px;
     margin: 20px;
-    height: 560px;
+    height: 950px;
     float:right;
     margin-right: 200px;
-    margin-top: 70px;
+    margin-top: 20px;
     
     }
-p{color: red;text-align:center;padding-top:30px;font-size: 40px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: italic;margin-left: 425px;}
+.alex{color:  red;text-align:center;padding-top:0px;font-size: 30px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-style: italic;margin-left: 425px;}
 /* styling sidebar */
 .sidehoverbar a {
     background-color: grey;
@@ -141,4 +141,20 @@ p{color: red;text-align:center;padding-top:30px;font-size: 40px;font-family: Cam
     color: #fff;
     font-size: 20px;
     font-weight: bold;}
+.hawdy{border: solid 8px black;padding:60px;float: left;margin-left: 140px;margin-top: 40px;}
+.submit{float: right;margin-top: 300px;}
+
+#button{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  display: block;
+  padding-left: 50px;
+  float: left;
   
+}
+
+.button1 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px;}
+.button2 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
+.button3 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
