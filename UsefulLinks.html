@@ -1,10 +1,51 @@
 <!DOCTYPE html>
 <html>
-<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="aboutus.css" type="text/css" rel="stylesheet" />
-  <script src="index.js"></script>
-  <div id="allcontent">
+<head>
+<link href="UsefulLinks.css" type="text/css" rel="stylesheet" />
+<script src="index.js"></script>
+</head>
+<style>
+    .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    position: relative;
+    float: right;
+    display: block;
+    }
+
+    .active, .collapsible:hover {
+    background-color: #555;
+    }
+
+    .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+    display: block;
+    }
+    .collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    }
+
+    .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+</style>
+<div id="allcontent">
     <body>
     <header>
     <div class="header">
@@ -54,56 +95,11 @@
     <a href='type here'><button class="button2">Search By Criteria</button></a>
     <a href='type here'><button class="button3">Plant identification</button></a>
     </div>
-    
-    
-    
-    </header>
-    
-    
-    
-    
-    
-    
-    
-    
-    </div> 
-    </body>
-    
-    </html>
-<style>
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+   
+</header>
 
 
-
-}
-</style>
-</head>
-<body>
-
-<h2>Animated Collapsibles</h2>
-
-
+<div></div>
 <button class="collapsible">Home Institution</button>
 <div class="content">
     <p><a target="_blank" href="http://www.aub.edu.lb/main/Pages/index.aspx">American University of Beirut</a></p>
