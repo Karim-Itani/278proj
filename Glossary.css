@@ -1,5 +1,20 @@
-.sidehoverbar a {
-    background-color: grey;
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  
+  body {
+    width: 1300px;
+    margin: 0px auto;
+    padding: 0px;
+    font: 14px Arial;
+  }
+  
+          
+  /* styling sidebar */
+  .sidehoverbar a {
+    background-color: green;
     position: absolute;
     font-size: 20px;
     text-decoration: none;
@@ -9,87 +24,80 @@
     left: -190px;
     transition: 0.5s;
     opacity: 0.8;
-}
-
-
-/* Hover effect on sidebar */
-
-.sidehoverbar a:hover {
+    z-index: 999;
+  }
+    
+  /* Hover effect on sidebar */
+  .sidehoverbar a:hover {
     left: 0px;
     opacity: 1;
-    background-color: #4CAF50;
-    z-index: 999;
-}
-
-
-/* float icons*/
-
-.sidehoverbar i {
+    background-color: #3ed643;
+    
+  }
+    
+  /* float icons*/
+  .sidehoverbar i {
     float: right;
-}
-
-
-/* defining position of each nav bar */
-
-.home {
+  }
+    
+  /* defining position of each nav bar */
+  .home {
     top: 50px;
     width: 210px;
     height: 30px;
-}
-
-.about {
+  }
+    
+  .about {
     top: 110px;
     width: 210px;
     height: 30px;
-}
-
-.useful {
+  }
+    
+  .useful {
     top: 170px;
     width: 210px;
     height: 30px;
-}
-
-.gallery {
+  }
+    
+  .gallery {
     top: 230px;
     width: 210px;
     height: 30px;
-}
-
-.categories {
+  }
+    
+  .categories {
     top: 290px;
     width: 210px;
     height: 30px;
-}
-
-.glossary {
+  }
+  
+  .glossary {
     top: 350px;
     width: 210px;
     height: 30px;
-}
-
-.contact {
+  }
+  
+  .contact {
     top: 410px;
     width: 210px;
     height: 30px;
-}
-
-
-/* content margin */
-
-.hoverable-topic {
+  }
+  
+    
+  /* content margin */
+  .hoverable-topic {
     margin-left: 55px;
-}
-
-.header {
+  }
+  
+  
+  
+  .header {
     overflow: hidden;
     background-color: #36a327;
     padding: 20px 10px;
-}
-
-
-/* Style the header links */
-
-.header a {
+  }
+  /* Style the header links */
+  .header a {
     color: black;
     text-align: center;
     padding: 12px;
@@ -97,116 +105,45 @@
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
-}
-
-
-/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-
-.header a.logo {
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
     font-size: 25px;
     font-weight: bold;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-}
-
-.header1 {
-    display: block;
+  
+  }
+  
+  .header1{display: block;
     color: #000;
-    font-size: 13px;
-}
-
-.header2 {
-    display: block;
+    font-size: 13px;}
+  .header2{display: block;
     color: #000;
     font-size: 14px;
-    font-weight: bold;
-}
-
-.header3 {
+    font-weight: bold;}
+  .header3{
     display: block;
     color: #fff;
     font-size: 20px;
-    font-weight: bold;
-}
-
-.menubutton {
-    float: left;
-}
-
-.useful-links {
-    float: right;
-    margin-right: 250px;
-}
-
-.useful-links p a {
-    color: rgb(2, 1, 12);
-    text-decoration: none;
-}
-
-.useful-links a:hover {
-    color: #f82a06;
-}
-
-.navigation_links li {
-    list-style: none;
-    float: left;
-    width: 10px;
-    margin-left: 14px;
-}
-
-.navigation_links li.first {
-    margin-left: 0px !important;
-}
-
-.navigation_links a {
-    font-family: Arial;
+    font-weight: bold;}
+  
+  #button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
     font-size: 16px;
-    font-weight: bold;
-    color: #000;
-    text-transform: capitalize;
-}
-
-.navigation_links a:hover {
-    color: #1a7b45;
-}
-
-footer {
-    width: 1500px;
-    height: 250px;
-    position: absolute;
-    bottom: 0;
-    z-index: -100;
-    background-color: #36a327;
-    margin-bottom: -16750px;
-}
-
-.footer_content {
-    margin-top: 200px;
-    height: 112px;
-    width: 1150px;
-    float: right;
-}
-
-footer .footer_menu {
-    height: 40px;
-    float: right;
-    margin-right: 88px;
-    clear: both;
-}
-
-footer .footer_menu li {
+    display: block;
+    padding-left: 50px;
     float: left;
-    list-style: none;
-    font-family: Arial;
-    font-size: 12px;
-    font-weight: bold;
-    color: #fff;
-    line-height: 40px;
-    margin-left: 30px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+    
+  }
+  
+  .button1 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px;}
+  .button2 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
+  .button3 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
+  .third{display: block;}
+  .third a:hover{color: red;}
