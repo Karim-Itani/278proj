@@ -6,34 +6,40 @@
 <script src="index.js"></script>
 </head>
 <style>
-    .collapsible {
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+body{
+    width: 1300px;
+    margin: 0px auto;
+    padding: 0px;
+    font: 14px Arial;
+  }
+.collapsible {
     background-color: #777;
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 60%;
     border: none;
     text-align: left;
     outline: none;
     font-size: 15px;
-    position: relative;
-    float: right;
-    display: block;
     }
 
-    .active, .collapsible:hover {
+.active, .collapsible:hover {
     background-color: #555;
     }
 
-    .content {
+.content {
     padding: 0 18px;
+    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-    display: block;
     }
-    .collapsible:after {
+.collapsible:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: white;
@@ -41,9 +47,16 @@
     margin-left: 5px;
     }
 
-    .active:after {
+.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
     }
+.class1{
+    display:flex;
+    flex-direction: column;
+    
+    }
+
+
 </style>
 <div id="allcontent">
     <body>
@@ -99,7 +112,7 @@
 </header>
 
 
-<div></div>
+<div class="class1">
 <button class="collapsible">Home Institution</button>
 <div class="content">
     <p><a target="_blank" href="http://www.aub.edu.lb/main/Pages/index.aspx">American University of Beirut</a></p>
@@ -110,7 +123,6 @@
             of Hope, Trees for Tomorrow</a></p>
 
 </div>
-
 
 <button class="collapsible">Useful links to other University plant database</button>
 <div class="content">
@@ -129,6 +141,7 @@
     <p><a target="_blank" href="http://www.lebanon-flora.org/default.php?st_pl=20#news">Lebanon flora (USJ)</a></p>
     <p><a target="_blank" href="http://www.woodyplants.cals.cornell.edu/home">Cornell University</a></p>
 </div>
+
 <button class="collapsible">Other Institutions/Societies</button>
 <div class="content">
     <p><a target="_blank" href="http://www.geog.ubc.ca/biodiversity/eflora/botanicalreferences.html">Electronic
@@ -166,6 +179,8 @@
             <p><a target="_blank" href="http://www.gflora.com/index.php?cmd=genus">Gflora, Encyclopedia of Houseplants</a>
 
                 <p><a target="_blank" href="http://www.findmeplants.co.uk/fullquestionnaire.aspx">Find me plants</a></p>
+</div>
+
 </div>
 
 <script>
