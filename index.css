@@ -158,3 +158,19 @@ body {
 .spotlight:img{
   width: 200px;
   height: auto;float: left;}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(9, 255, 124);
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .footer_menu li{display: inline;}
+
+  .footer_menu a{text-decoration: none;}
+  
