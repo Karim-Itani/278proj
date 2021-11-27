@@ -145,7 +145,8 @@ body {
 .button1 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px;}
 .button2 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
 .button3 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
-
+.third{display: block;}
+.third a:hover{color: red;}
 
 #more {display: none;}
 
