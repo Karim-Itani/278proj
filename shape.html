@@ -1,107 +1,78 @@
 <!doctype html>
 <html>
+
 <head>
-  <link href="shape.css" type="text/css" rel="stylesheet"/>
-  <script src="shape.js"></script>
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="shape.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <header>
     <div class="header">
-    <a href="/" class="logo">
-    <img src="images/logo.png">
-    <span class="header1">Landscape Design & Ecosystem Management</span>
-    <span class="header2">Faculty of Agriculture & Food Sciences</span>
-    <span class="header2">AUB Landscape Plant Database</span>
-    </a>
+        <a href="/" class="logo">
+            <img src="images/logo.png">
+            <span class="header1">Landscape Design & Ecosystem Management</span>
+            <span class="header2">Faculty of Agriculture & Food Sciences</span>
+            <span class="header2">AUB Landscape Plant Database</span>
+        </a>
     </div>
-    
+
     <div id="mySidenav" class="sidenav">
-      <div class="sidehoverbar">
-        <a href="#" class="home">
-            Home
-        </a>
-         
-        <a href="#" class="about">
-            About Us
-        </a>
-         
-        <a href="#" class="usefullinks">
-            Useful Links
-        </a>
-         
-        <a href="#" class="gallery">
-            Image Gallery
-        </a>
-         
-        <a href="#" class="categories">
-            Popular Plant Categories
-        </a>
-    
-        <a href="#" class="glossary">
-          Glossary
-      </a>
-    
-      <a href="#" class="contact">
-          Contact Us
-    </a>
-    
-    </div>
-    
-    <div id="button">
-    <a href='type here'><button class="button1">Search By Name</button></a>
-    <a href='type here'><button class="button2">Search By Criteria</button></a>
-    <a href='type here'><button class="button3">Plant identification</button></a>
-    </div>
+        <div class="sidehoverbar">
+            <a href="#" class="home">
+                Home
+            </a>
+
+            <a href="#" class="about">
+                About Us
+            </a>
+
+            <a href="#" class="usefullinks">
+                Useful Links
+            </a>
+
+            <a href="#" class="gallery">
+                Image Gallery
+            </a>
+
+            <a href="#" class="categories">
+                Popular Plant Categories
+            </a>
+
+            <a href="#" class="glossary">
+                Glossary
+            </a>
+
+            <a href="#" class="contact">
+                Contact Us
+            </a>
+
+        </div>
+
+        <div id="button">
+            <a href='type here'><button class="button1">Search By Name</button></a>
+            <a href='type here'><button class="button2">Search By Criteria</button></a>
+            <a href='type here'><button class="button3">Plant identification</button></a>
+        </div>
 </header>
 
-    
-<h1>Checkbox select</h1>
-
-<form id="make_checkbox_select">
-
-  <select name="make">
-      <option data-count="2" value="Alfa Romeo">Alfa Romeo</option>
-      <option data-count="23" value="Audi">Audi</option>
-      <option data-count="433" value="BMW">BMW</option>
-      <option data-count="45" value="Chrysler">Chrysler</option>
-      <option data-count="476" value="Citroen">Citroen</option>
-      <option data-count="78" value="Dodge">Dodge</option>
-      <option data-count="123" value="Fiat">Fiat</option>
-      <option data-count="32" value="Ford">Ford</option>
-      <option data-count="3" value="Honda">Honda</option>
-      <option data-count="342" value="Hyundai">Hyundai</option>
-  </select>
-  
-  <input type="submit" />
-  
-</form>
+<ul>
+    <li><input type="checkbox" id="cb1" />
+        <label for="cb1"><img src="https://picsum.photos/seed/1/100" /></label>
+    </li>
+    <li><input type="checkbox" id="cb2" />
+        <label for="cb2"><img src="https://picsum.photos/seed/2/100" /></label>
+    </li>
+    <li><input type="checkbox" id="cb3" />
+        <label for="cb3"><img src="https://picsum.photos/seed/3/100" /></label>
+    </li>
+    <li><input type="checkbox" id="cb4" />
+        <label for="cb4"><img src="https://picsum.photos/seed/4/100" /></label>
+    </li>
+</ul>
 
 
-<script>
+</div>
+</body>
 
-	$(function()
-	{
-		var mySelectCheckbox = new checkbox_select(
-		{
-			selector : "#make_checkbox_select",
-            selected_translation : "selectat",
-            all_translation : "Toate marcile",
-            not_found : "Nici unul gasit",
-
-			// Event during initialization
-			onApply : function(e)
-			{
-                alert("Custom Event: " + e.selected);
-			}
-		});
-  
-	});
-		
-</script>
-    
-    </div> 
-    </body>
-    
-    </html>
+</html>

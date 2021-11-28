@@ -220,3 +220,11 @@ body {
     flex-direction: row;
     justify-content: center;
 }
+
+.popularbuttons h3 {
+    text-align: center;
+}
+
+.popularbuttons a {
+    text-decoration: none;
+}
