@@ -1,0 +1,652 @@
+
+
+                        <div id="onHide" class="col_left width407">
+                            <div class="plant_sec" id="plant_sec1">
+                                <h1><a href="/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant type</a></h1>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Cactus.isSelected() }, click: plantType.Cactus.Click">
+                                    <span>
+                                        <img src="D:\CactusSucculent.png" alt="">
+                                    </span>
+                                    <p>Cactus/Succulent</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Groundcover.isSelected() }, click: plantType.Groundcover.Click">
+                                    <span>
+                                        <img src="D:\GroundCover.png" alt="">
+                                    </span>
+                                    <p>Ground Cover</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Lawn.isSelected() }, click: plantType.Lawn.Click">
+                                    <span>
+                                        <img src="D:\lawn-palnt.png" alt="">
+                                    </span>
+                                    <p>Lawn</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Palm.isSelected() }, click: plantType.Palm.Click">
+                                    <span>
+                                        <img src="D:\Palms.png" alt="">
+                                    </span>
+                                    <p>Palm</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Shrub.isSelected() }, click: plantType.Shrub.Click">
+                                    <span>
+                                        <img src="D:\Shrub.png" alt="">
+                                    </span>
+                                    <p>Shrub</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Tree.isSelected() }, click: plantType.Tree.Click">
+                                    <span>
+                                        <img src="D:\Trees.png" alt="">
+                                    </span>
+                                    <p>Tree</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Vine.isSelected() }, click: plantType.Vine.Click">
+                                    <span>
+                                        <img src="D:\Vines.png" alt="">
+                                    </span>
+                                    <p>Vine</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="onHide" class="col_right width338">
+                            <div class="plant_sec" id="plant_sec5">
+                                <h1><a href="/Pages/Glossary/#-C-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Canopy Shape</a></h1>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Weeping.isSelected() }, click: plantShape.Weeping.Click">
+                                    <span>
+                                        <img src="D:\Weeping.png" alt="">
+                                    </span>
+                                    <p>Weeping</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Upright.isSelected() }, click: plantShape.Upright.Click">
+                                    <span>
+                                        <img src="D:\Upright.png" alt="">
+                                    </span>
+                                    <p>Upright/Erect</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Vase.isSelected() }, click: plantShape.Vase.Click">
+                                    <span>
+                                        <img src="/images/search/plant/Vase.png" alt="">
+                                    </span>
+                                    <p>Vase</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Pyramidal.isSelected() }, click: plantShape.Pyramidal.Click">
+                                    <span>
+                                        <img src="/images/search/plant/Pyramidal.png" alt="">
+                                    </span>
+                                    <p>Pyramidal</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Round.isSelected() }, click: plantShape.Round.Click">
+                                    <span>
+                                        <img src="/images/search/plant/Round.png" alt="">
+                                    </span>
+                                    <p>Rounded</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Columnar.isSelected() }, click: plantShape.Columnar.Click">
+                                    <span>
+                                        <img src="/images/search/plant/Columnar.png" alt="">
+                                    </span>
+                                    <p>Columnar</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.oval.isSelected() }, click: plantShape.oval.Click">
+                                    <span>
+                                        <img src="/images/search/plant/Oval.png" alt="">
+                                    </span>
+                                    <p>Oval</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Palm.isSelected() }, click: plantShape.Palm.Click">
+                                    <span>
+                                        <img src="/images/search/plant/Palm.png" alt="">
+                                    </span>
+                                    <p>Palm</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Spreading.isSelected() }, click: plantShape.Spreading.Click">
+                                    <span>
+                                        <img src="/images/search/plant/Spreading.png" alt="">
+                                    </span>
+                                    <p>Spreading</p>
+                                </div>
+                            </div>
+                        </div>
+<form id="make_checkbox_select">
+
+  <select name="plant height">
+      <option type="checkbox" name="checkboxG31" id="checkboxG31" class="css-checkbox" data-bind=" checked: plantHeightRange.OvTwentyThree.isSelected">
+        <label for="checkboxG31" class="css-label2 bgright">&gt;23 (m)</label></option>
+      <option type="checkbox" name="checkboxG32" id="checkboxG32" class="css-checkbox" data-bind=" checked: plantHeightRange.LeTwentyThree.isSelected">
+        <label for="checkboxG32" class="css-label2 bgright">15-23 (m)</label></option>
+      <option type="checkbox" name="checkboxG33" id="checkboxG33" class="css-checkbox" data-bind=" checked: plantHeightRange.LeFifteen.isSelected">
+        <label for="checkboxG33" class="css-label2 bgright">8-15 (m)</label></option>
+      <option type="checkbox" name="checkboxG34" id="checkboxG34" class="css-checkbox" data-bind=" checked: plantHeightRange.LeEight.isSelected">
+        <label for="checkboxG34" class="css-label2 bgright">5-8 (m)</label></option>
+      <option type="checkbox" name="checkboxG35" id="checkboxG35" class="css-checkbox" data-bind=" checked: plantHeightRange.LeFive.isSelected">
+        <label for="checkboxG35" class="css-label2 bgright">3-5 (m)</label></option>
+      <option type="checkbox" name="checkboxG159" id="checkboxG159" class="css-checkbox" data-bind=" checked: plantHeightRange.LeThree.isSelected">
+        <label for="checkboxG159" class="css-label2 bgright">1.5-3 (m)</label></option>
+      <option type="checkbox" name="checkboxG36" id="checkboxG36" class="css-checkbox" data-bind=" checked: plantHeightRange.LeOnePointFive.isSelected">
+        <label for="checkboxG36" class="css-label2 bgright">1-1.5 (m)</label></option>
+      <option type="checkbox" name="checkboxG37" id="checkboxG37" class="css-checkbox" data-bind=" checked: plantHeightRange.LeOne.isSelected">
+        <label for="checkboxG37" class="css-label2 bgright">0.5-1 (m)</label></option>
+      <option type="checkbox" name="checkboxG38" id="checkboxG38" class="css-checkbox" data-bind=" checked: plantHeightRange.LeZeroFive.isSelected">
+        <label for="checkboxG38" class="css-label2 bgright">0-0.5 (m)</label></option>
+  </select>
+  <input type="submit" />
+  
+</form>
+<form id="make_checkbox_select2">
+
+    <select name="plant spread">
+        <option type="checkbox" name="checkboxG39" id="checkboxG39" class="css-checkbox" data-bind=" checked: plantSpreadRange.OverFifteen.isSelected">
+            <label for="checkboxG39" class="css-label2">&gt;15 (m)</label></option>
+        <option type="checkbox" name="checkboxG40" id="checkboxG40" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessFifteen.isSelected">
+            <label for="checkboxG40" class="css-label2">10-15 (m)</label></option>
+        <option type="checkbox" name="checkboxG41" id="checkboxG41" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessTen.isSelected">
+            <label for="checkboxG41" class="css-label2">8-10 (m)</label></option>
+        <option type="checkbox" name="checkboxG42" id="checkboxG42" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessEight.isSelected">
+            <label for="checkboxG42" class="css-label2">5-8 (m)</label></option>
+        <option type="checkbox" name="checkboxG43" id="checkboxG43" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessFive.isSelected">
+            <label for="checkboxG43" class="css-label2">3-5 (m)</label></option>
+        <option type="checkbox" name="checkboxG44" id="checkboxG44" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessThree.isSelected">
+            <label for="checkboxG44" class="css-label2">1.5-3 (m)</label></option>
+        <option type="checkbox" name="checkboxG45" id="checkboxG45" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessOne.isSelected">
+            <label for="checkboxG45" class="css-label2">0.5-1 (m)</label></option>
+        <option type="checkbox" name="checkboxG46" id="checkboxG46" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessZeroFive.isSelected">
+            <label for="checkboxG46" class="css-label2">0-0.5 (m)</label></option>
+        
+    </select>
+   
+    <input type="submit" />
+    
+  </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script>
+
+  $(function()
+  {
+    var mySelectCheckbox = new checkbox_select(
+    {
+      selector : "#make_checkbox_select",
+            selected_translation : "selectat",
+            all_translation : "Toate marcile",
+            not_found : "Nici unul gasit",
+
+      // Event during initialization
+      onApply : function(e)
+      {
+                alert("Custom Event: " + e.selected);
+      }
+    });
+  
+  });
+  $(function()
+  {
+    var mySelectCheckbox = new checkbox_select(
+    {
+      selector : "#make_checkbox_select2",
+            selected_translation : "selectat",
+            all_translation : "Toate marcile",
+            not_found : "Nici unul gasit",
+
+      // Event during initialization
+      onApply : function(e)
+      {
+                alert("Custom Event: " + e.selected);
+      }
+    });
+  
+  });
+    
+</script>
+\<style>
+    body
+{
+  font-family: Open sans, Helvetica;
+  background:white;
+  color: white;
+  font-size: 16px;
+}
+
+h1
+{
+  font-weight: lighter;
+}
+
+small
+{
+  color: firebrick;
+}
+
+div.checkbox_select
+{
+  width: 200px;
+}
+
+.checkbox_select_anchor
+{
+  display: block;
+  background: green;
+  color: white;
+  cursor: pointer;
+  padding: 10px 5px 5px;
+  position: relative;
+  
+}
+
+.checkbox_select_anchor:after
+{
+  width: 0; 
+  height: 0; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid darkred;
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.expanded .checkbox_select_anchor:after
+{
+  border-top: 0;
+  border-bottom: 10px solid firebrick;
+}
+
+
+.checkbox_select_anchor:hover
+{
+  background: #FF3030 !important;
+}
+
+.expanded .checkbox_select_anchor
+{
+    background: #7C1818;
+}
+
+div.checkbox_select .select_input
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkbox_select_dropdown
+{
+    display: none;
+    background: whitesmoke;
+}
+
+.checkbox_select_dropdown.show
+{
+    display: block;
+}
+
+.checkbox_select_dropdown ul
+{
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+  margin: 0;
+      border: 1px solid #999;
+  border-top: 0;
+  border-bottom: 0;
+}
+.checkbox_select_dropdown ul li
+{
+    list-style: none;
+    position: relative;
+    color: #666;
+}
+.checkbox_select_dropdown ul li label
+{
+  position: relative;
+      padding: 10px 5px 5px 40px;
+     display: block;
+  cursor: pointer;
+}
+.checkbox_select_dropdown ul li label:hover
+{
+  background: #cbcbcb;
+  color: white;
+}
+.checkbox_select_dropdown ul li input:checked + label
+{
+  background: #bbb;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+.checkbox_select_dropdown ul li input
+{
+  position: absolute;
+  left:0;
+  z-index:1;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+}
+.checkbox_select_search
+{
+    width: 200px;
+    padding: 10px 5px 5px;
+    border: 1px solid #999;
+      border-top: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.checkbox_select_submit
+{
+    background: #00A600;
+    color: white;
+    padding: 10px 5px 5px;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
+}
+
+</style>
+<script>
+    if(typeof String.prototype.trim !== 'function') {
+    
+    String.prototype.trim = function()
+    {
+        return this.replace(/^\s+|\s+$/g, '');
+    }
+}
+
+var checkbox_select = function(params)
+{
+    // Error handling first
+    // ----------------------------------------------------------------------------------------------------
+    
+    var error = false;
+
+    // If the selector is not given
+    if(!params.selector) {                                              console.error("selector needs to be defined"); error = true; }
+
+    // If the selector is not a string
+    if(typeof params.selector != "string") {                            console.error("selector needs to be a string"); error = true; }
+
+    // If the element is not a form
+    if(!$(params.selector).is("form")) {                                console.error("Element needs to be a form"); error = true; }
+
+    // If the element doesn't contain a select
+    if($(params.selector).find("select").length < 1) {                  console.error("Element needs to have a select in it"); error = true; }
+
+    // If the element doesn't contain option elements
+    if($(params.selector).find("option").length < 1) {                  console.error("Select element needs to have an option in it"); error = true; }
+
+    // If the select element doesn't have a name attribute
+    if($(params.selector).find('select').attr('name') == undefined) {   console.error("Select element needs to have a name attribute"); error = true; }
+
+    // If there was an error at all, dont continue in the code.
+    if(error)
+        return false;
+
+    // ----------------------------------------------------------------------------------------------------
+
+    var that            = this,
+        $_native_form   = $(params.selector),
+        $_native_select = $_native_form.find('select'),
+        
+        // Variables
+        selector                = params.selector,
+        select_name             = $_native_select.attr('name').charAt(0).toUpperCase() + $_native_select.attr('name').substr(1),
+        selected_translation    = params.selected_translation   ? params.selected_translation   : "selected",
+        all_translation         = params.all_translation        ? params.all_translation        : "All " + select_name + "s",
+        not_found_text          = params.not_found              ? params.not_found              : "No " + select_name + "s found.",
+        currently_selected      = [],
+        
+        // Create the elements needed for the checkbox select
+        $_parent_div    = $("<div />")      .addClass("checkbox_select"),
+        $_select_anchor = $("<a />")        .addClass("checkbox_select_anchor")     .text( select_name ),
+        $_search        = $("<input />")    .addClass("checkbox_select_search"),
+        $_submit        = $("<input />")    .addClass("checkbox_select_submit")     .val("Apply") .attr('type','submit') .data("selected", ""),
+        $_dropdown_div  = $("<div />")      .addClass("checkbox_select_dropdown"),
+        $_not_found     = $("<span />")     .addClass("not_found hide")             .text(not_found_text),
+        $_ul            = $("<ul />"),
+
+        updateCurrentlySelected = function()
+        {
+            var selected = [];
+
+            $_ul.find("input:checked").each(
+                                                        
+                function()
+                {
+                    selected.push($(this).val());
+                }
+            );
+
+            currently_selected = selected;
+
+            if(selected.length == 0)
+            {
+                    $_select_anchor.text( select_name )
+            }
+            else if(selected.length == 1)
+            {
+                $_select_anchor.text( selected[0] + " " + selected_translation );
+            }
+            else if(selected.length ==  $_ul.find("input[type=checkbox]").length)
+            {
+                $_select_anchor.text( all_translation );
+            }
+            else
+            {
+                $_select_anchor.text( selected.length + " " + selected_translation );
+            }
+        },
+
+        // Template for the li, will be used in a loop.
+        createItem  = function(name, value, count)
+        {
+            var uID             = 'checkbox_select_' + select_name + "_" + name.replace(" ", "_"),
+                $_li            = $("<li />"),
+                $_checkbox      = $("<input />").attr(
+                                        {
+                                            'name'  : name,
+                                            'id'    : uID,
+                                            'type'  : "checkbox",
+                                            'value' : value
+                                        }
+                                    )
+                                    .click(
+
+                                        function()
+                                        {
+                                            updateCurrentlySelected();
+                                        }
+                                    ),
+
+                $_label         = $("<label />").attr('for', uID),
+                $_name_span     = $("<span />").text(name).prependTo($_label),
+                $_count_span    = $("<span />").text(count).appendTo($_label);
+                        
+            return $_li.append( $_checkbox.after( $_label ) );
+        },
+    
+    apply = function()
+    {
+      $_dropdown_div.toggleClass("show");
+      $_parent_div.toggleClass("expanded");
+        
+      if(!$_parent_div.hasClass("expanded"))
+      {  
+        // Only do the Apply event if its different
+        if(currently_selected != $_submit.data("selected"))
+        {
+          $_submit.data("selected" , currently_selected);
+
+          that.onApply(
+            { 
+              selected : $_submit.data("selected")
+            }
+          );
+        }   
+      }         
+    };
+    
+    // Event of this instance
+    that.onApply = typeof params.onApply == "function" ? 
+                
+                    params.onApply :
+                
+                    function(e) 
+                    {
+                        //e.selected is accessible
+                    };
+
+    that.update = function() 
+    {
+        $_ul.empty();
+        $_native_select.find("option").each(
+
+            function(i)
+            {
+                $_ul.append( createItem( $(this).text(), $(this).val(), $(this).data("count") ) );
+            }
+        );
+
+        updateCurrentlySelected();
+    }
+
+    that.check = function(checkbox_name, checked) 
+    {
+        //$_ul.find("input[type=checkbox][name=" + trim(checkbox_name) + "]").attr('checked', checked ? checked : false);
+
+    $_ul.find("input[type=checkbox]").each(function()
+    {
+      // If this elements name is equal to the one sent in the function
+      if($(this).attr('name') == checkbox_name)
+      {
+        // Apply the checked state to this checkbox
+        $(this).attr('checked', checked ? checked : false);
+        
+        // Break out of each loop
+        return false;
+      }
+    });
+    
+        updateCurrentlySelected();
+
+    }
+
+    // Build mark up before pushing into page
+    $_dropdown_div  .prepend($_search);
+    $_dropdown_div  .append($_ul);
+    $_dropdown_div  .append($_not_found);
+    $_dropdown_div  .append($_submit);
+    $_dropdown_div  .appendTo($_parent_div);
+    $_select_anchor .prependTo($_parent_div);
+
+    // Iterate through option elements
+    that.update();
+
+    // Events 
+
+    // Actual dropdown action
+    $_select_anchor.click( 
+
+        function()
+        {
+            apply();
+        }
+    );
+             
+    // Filters the checkboxes by search on keyup
+    $_search.keyup(
+
+        function()
+        {
+            var search = $(this).val().toLowerCase().trim();
+
+            if( search.length == 1 )
+            {
+                $_ul.find("label").each(
+
+                    function()
+                    {
+                        if($(this).text().toLowerCase().charAt(0) == search.charAt(0))
+                        {
+                            if($(this).parent().hasClass("hide"))
+                                $(this).parent().removeClass("hide");
+
+                            if(!$_not_found.hasClass("hide"))
+                                $_not_found.addClass("hide");
+                        }
+                        else
+                        {
+                            if(!$(this).parent().hasClass("hide"))
+                                $(this).parent().addClass("hide");
+
+                            if($_not_found.hasClass("hide"))
+                                $_not_found.removeClass("hide");
+                        }
+                    }
+                );
+            }
+            else
+            {
+                // If it doesn't contain 
+                if($_ul.text().toLowerCase().indexOf(search) == -1)
+                {
+                    if($_not_found.hasClass("hide"))
+                        $_not_found.removeClass("hide");
+                }
+                else
+                {
+                    if(!$_not_found.hasClass("hide"))
+                        $_not_found.addClass("hide");
+                }
+                    
+                $_ul.find("label").each(
+
+                    function()
+                    {
+                        if($(this).text().toLowerCase().indexOf(search) > -1)
+                        {
+                            if($(this).parent().hasClass("hide"))
+                                $(this).parent().removeClass("hide");
+                        }
+                        else
+                        {
+                            if(!$(this).parent().hasClass("hide"))
+                                $(this).parent().addClass("hide");
+                        }
+                    }
+                );
+            }
+        }
+    );
+
+    $_submit.click(
+                
+        function(e)
+        {
+            e.preventDefault();
+
+            apply();
+        }
+    );
+
+    // Delete the original form submit
+    $(params.selector).find('input[type=submit]').remove();
+
+    // Put finalized markup into page.
+    $_native_select.after($_parent_div);
+
+    // Hide the original element
+    $_native_select.hide();
+};
+</script>
