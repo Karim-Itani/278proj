@@ -1,0 +1,294 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+body {
+  width: 1300px;
+  margin: 0px auto;
+  padding: 0px;
+  font: 14px Arial;
+}
+
+        
+
+/* styling sidebar */
+.sidehoverbar a {
+  background-color: green;
+  position: absolute;
+  font-size: 20px;
+  text-decoration: none;
+  Color: white;
+  padding: 10px;
+  border-radius: 0px 25px 25px 0px;
+  left: -190px;
+  transition: 0.5s;
+  opacity: 0.8;
+  z-index: 999;
+}
+  
+/* Hover effect on sidebar */
+.sidehoverbar a:hover {
+  left: 0px;
+  opacity: 1;
+  background-color: #3ed643;
+  
+}
+  
+/* float icons*/
+.sidehoverbar i {
+  float: right;
+}
+  
+/* defining position of each nav bar */
+.home {
+  top: 50px;
+  width: 210px;
+  height: 30px;
+}
+  
+.about {
+  top: 110px;
+  width: 210px;
+  height: 30px;
+}
+  
+.useful {
+  top: 170px;
+  width: 210px;
+  height: 30px;
+}
+  
+.gallery {
+  top: 230px;
+  width: 210px;
+  height: 30px;
+}
+  
+.categories {
+  top: 290px;
+  width: 210px;
+  height: 30px;
+}
+
+.glossary {
+  top: 350px;
+  width: 210px;
+  height: 30px;
+}
+
+.contact {
+  top: 410px;
+  width: 210px;
+  height: 30px;
+}
+
+  
+/* content margin */
+.hoverable-topic {
+  margin-left: 55px;
+}
+
+
+
+.header {
+  overflow: hidden;
+  background-color: #36a327;
+  padding: 20px 10px;
+}
+/* Style the header links */
+.header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.header1{display: block;
+  color: #000;
+  font-size: 13px;}
+.header2{display: block;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;}
+.header3{
+  display: block;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;}
+
+#button{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  display: block;
+  padding-left: 50px;
+  float: left;
+  
+}
+
+.button1 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px;}
+.button2 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
+.button3 {border-radius: 50%;padding: 64px 32px;display: block;  text-decoration: none;background: url(images/wild-trees-2.jpeg) no-repeat;color: white;margin: 10px}
+
+h1
+{
+  font-weight: lighter;
+}
+
+small
+{
+  color: firebrick;
+}
+
+div.checkbox_select
+{
+  width: 200px;
+}
+
+.checkbox_select_anchor
+{
+  display: block;
+  background: firebrick;
+  color: white;
+  cursor: pointer;
+  padding: 10px 5px 5px;
+  position: relative;
+}
+
+.checkbox_select_anchor:after
+{
+  width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid darkred;
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+.expanded .checkbox_select_anchor:after
+{
+	border-top: 0;
+	border-bottom: 10px solid firebrick;
+}
+
+
+.checkbox_select_anchor:hover
+{
+  background: #FF3030 !important;
+}
+
+.expanded .checkbox_select_anchor
+{
+    background: #7C1818;
+}
+
+div.checkbox_select .select_input
+{
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkbox_select_dropdown
+{
+    display: none;
+    background: whitesmoke;
+}
+
+.checkbox_select_dropdown.show
+{
+    display: block;
+}
+
+.checkbox_select_dropdown ul
+{
+    max-height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+  margin: 0;
+      border: 1px solid #999;
+  border-top: 0;
+  border-bottom: 0;
+}
+.checkbox_select_dropdown ul li
+{
+    list-style: none;
+    position: relative;
+    color: #666;
+}
+.checkbox_select_dropdown ul li label
+{
+  position: relative;
+      padding: 10px 5px 5px 40px;
+     display: block;
+  cursor: pointer;
+}
+.checkbox_select_dropdown ul li label:hover
+{
+  background: #cbcbcb;
+  color: white;
+}
+.checkbox_select_dropdown ul li input:checked + label
+{
+  background: #bbb;
+  color: white;
+  text-shadow: 0px 1px 1px rgba(150, 150, 150, 1);
+}
+.checkbox_select_dropdown ul li input
+{
+  position: absolute;
+  left:0;
+  z-index:1;
+  display: inline-block;
+  height: 100%;
+  width: 30px;
+}
+.checkbox_select_search
+{
+    width: 200px;
+    padding: 10px 5px 5px;
+    border: 1px solid #999;
+      border-top: 0;
+    -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+}
+
+.checkbox_select_submit
+{
+    background: #00A600;
+    color: white;
+    padding: 10px 5px 5px;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.hide
+{
+    display: none;
+}
+
+
+
