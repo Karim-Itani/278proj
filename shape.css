@@ -198,7 +198,7 @@ input[type="checkbox"][id^="cb"] {
     display: none;
 }
 
-label {
+.imgcheckboxes label {
     border: 1px solid #fff;
     padding: 10px;
     display: block;
@@ -240,12 +240,11 @@ label img {
 }
 
 :checked+label {
-    border-color:green;
-    
+    border-color: green;
 }
 
 :checked+label::before {
-    content:"+";
+    content: "+";
     background-color: green;
     transform: scale(1);
 }
@@ -265,9 +264,22 @@ hr {
     border-style: inset;
     border-width: 1px;
     color: chartreuse;
-  }
-.tit{margin-left: 12px; 
-    text-align: center;}
-.imgleft{float: left;}
-.imgright{display: block;align-items: center;}
-.plant_sec{display: inline;}
+}
+
+.tit {
+    margin-left: 12px;
+    text-align: center;
+}
+
+.imgleft {
+    float: left;
+}
+
+.imgright {
+    display: block;
+    align-items: center;
+}
+
+.plant_sec {
+    display: inline;
+}
