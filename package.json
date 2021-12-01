@@ -1,5 +1,26 @@
 {
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "mongodb": "^4.2.1"
-  }
+  },
+  "name": "278",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karim-Itani/278proj.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Karim-Itani/278proj/issues"
+  },
+  "homepage": "https://github.com/Karim-Itani/278proj#readme",
+  "description": ""
 }
