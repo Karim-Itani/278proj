@@ -1,0 +1,882 @@
+﻿var urlPath = window.location.pathname;
+
+
+
+var viewModel = new SearchViewModel();
+
+function SearchViewModel() {
+
+    var self = this;
+
+    self.plantType = new PlantType();
+
+    self.light = new Light();
+
+    self.soil = new Soil();
+
+    self.soilPh = new SoilPh();
+
+    self.water = new Water();
+
+    self.heatTolerance = ko.observable();
+
+    self.droughtTolerance = ko.observable();
+
+    self.frostTolerance = ko.observable();
+
+    self.saltTolerance = ko.observable();
+
+    self.lifeCycle = ko.observable();
+
+    self.usage = new Usage();
+
+    self.plantShape = new PlantShape();
+
+    self.plantHeightRange = new PlantHeightRange();
+
+    self.plantSpreadRange = new PlantSpreadRange();
+
+    self.timeToFullGrowthRange = new TimeToFullGrowthRange();
+
+    self.growthRate = ko.observable();
+
+    self.colorGrowingSeason = new ColorGrowingSeason();
+
+    self.colorChangingSeason = new ColorChangingSeason();
+
+    self.leafPersistance = ko.observable();
+
+    self.scent = ko.observable();
+
+    self.flowerColor = new FlowerColor();
+
+    self.flowerScent = ko.observable();
+
+    self.flowerSeason = ko.observable();
+
+    self.flowerShowiness = ko.observable();
+
+    self.fruitColor = new FruitColor();
+
+    self.fruitShowiness = ko.observable();
+
+    self.fruitTypeCategory = ko.observable();
+
+    self.fruitSeason = ko.observable();
+
+    self.fruitSize = new FruitSize();
+
+    self.trunkEstheticValue = new TrunkEstheticValue();
+
+    self.crownshaft = ko.observable();
+
+    self.ediblePlantParts = ko.observable();
+
+    self.fruitLeavesFlowerLitter = ko.observable();
+
+    self.surfaceRooting = ko.observable();
+
+    self.plantToxicity = ko.observable();
+
+    self.invasivePotential = ko.observable();
+
+    self.pruningRequirements = ko.observable();
+
+    self.suceptibilityToDiseases = ko.observable();
+
+    self.lifeSpan = ko.observable();
+
+    self.leafVenation = new LeafVenation();
+
+    self.leafArrangement = new LeafArrangement();
+
+    self.leafType = new LeafType();
+
+    self.leafLengthRange = new LeafLengthRange();
+
+    self.leafMargin = new LeafMargin();
+
+    self.leafShape = new LeafShape();
+
+
+
+
+    self.tempValue = ko.observable();
+    self.countryTemps = ko.observableArray([]);
+    self.tempClass = ko.observable();
+    self.tempId = ko.observable();
+    self.chosenCountry = ko.observable();
+
+    self.chosenTempID = ko.observableArray([]);
+    self.chosenTemp = ko.observableArray([]);
+
+
+    self.getTemp = function (CountryName, MapNumb) {
+
+        if (self.chosenCountry() != CountryName) {
+            self.chosenTempID.removeAll();
+            self.chosenTemp.removeAll();
+        }
+
+
+        self.chosenCountry(CountryName);
+
+        if (self.chosenCountry() != null) {
+
+
+            $('#ClimateID').attr('style', "text-decoration: none;");
+
+        }
+
+        self.countryTemps.removeAll();
+
+        for (var i = 0; i < staticData[CountryName].length; i++) {
+            var temp = staticData[CountryName][i];
+            var tempclass = tempColors[temp];
+            var altV = altValues[temp];
+
+            self.countryTemps.push(new countryTemp(i, temp, tempclass, altV));
+
+        }
+
+        $("#main_map *").addClass("disabled");
+        $("#map_" + MapNumb).removeClass("disabled");
+        $("#list_text *").addClass("mapactive");
+        $("#text_" + MapNumb).removeClass("mapactive");
+
+        self.selectedTemp();
+
+    }
+
+    self.sendCountry = function (a) {
+        self.chosenCountry(a);
+        alert(self.chosenCountry());
+    }
+
+    self.selectedTemp = function () {
+
+        for (var i = 0; i < self.chosenTempID().length; i++) {
+
+            $('#tempId' + self.chosenTempID()[i]).attr('style', "border-color:green; border-width: 3px; ");
+            $('#altId' + self.chosenTempID()[i]).attr('style', "border-color:green;border-width: 3px;  ");
+    
+        }
+
+    }
+
+
+
+
+
+    window.onload = function () {
+
+        self.selectedTemp();
+
+    }
+
+
+    self.selectme = function (ob) {
+
+        var val = ob.tempValue();
+        var ID = ob.tempId();
+
+        var altID = ob.altId();
+
+        
+
+        $('#colorCompareDiv').css('border-color', 'black');
+
+        if ($('#tempId' + ID).css('border-color') == $('#colorCompareDiv').css('border-color') || $('#altId' + ID).css('border-color') == $('#colorCompareDiv').css('border-color')) {
+
+            $('#tempId' + ID).attr('style', "border-color:green; border-width: 3px; ");
+            $('#altId' + ID).attr('style', "border-color:green; border-width: 3px;");
+           
+
+            
+            self.chosenTempID.push(ID);
+            self.chosenTemp.push(val);
+             
+
+        }
+        else {
+            $('#tempId' + ID).attr('style', "border-color:none");
+            $('#altId' + ID).attr('style', "border-color:none");
+                self.chosenTempID.remove(ID);
+                self.chosenTemp.remove(val);
+            
+        }
+
+    }
+
+
+    var tempColors = {
+
+        29.5: "weather_color",
+        26.5: "weather_color bgcolor_2",
+        23.5: "weather_color bgcolor_3",
+        21: "weather_color bgcolor_4",
+        18.5: "weather_color bgcolor_5",
+        15.5: "weather_color bgcolor_6",
+        13: "weather_color bgcolor_7",
+        10: "weather_color bgcolor_8",
+        7: "weather_color bgcolor_9",
+        4.5: "weather_color bgcolor_10"
+    };
+
+    var altValues = {
+
+        29.5: "0-300",
+        26.5: "0-300",
+        23.5: "0-300",
+        21: "0-300",
+        18.5: "300-800",
+        15.5: "800-1100",
+        13: "1100-1500",
+        10: "1500-1875",
+        7: "1875-2250",
+        4.5: "2250-3000"
+    };
+
+
+
+
+
+
+
+    var staticData = {
+
+        Algeria: ["29.5", "26.5", "23.5", "21", "18.5", "15.5", "13"],
+        Morroco: ["29.5", "26.5", "23.5", "21", "18.5", "15.5", "13", "10", "7"],
+        Lebanon: ["21", "18.5", "15.5", "13", "10", "7", "4.5"],
+        Palestine: ["29.5", "26.5", "23.5", "21"],
+        Jordan: ["23.5", "21", "18.5", "15.5", "13"],
+        SaudiArabia: ["29.5", "26.5", "23.5", "21", "18.5"],
+        Iraq: ["29.5", "26.5", "23.5", "21", "18.5", "15.5", "13", "10", "7", "4.5"],
+        Syria: ["21", "18.5", "15.5", "13", "10", "7"],
+        Kuwait: ["26.5"],
+        Qatar: ["29.5", "26.5"],
+        Mauritania: ["29.5", "26.5", "23.5"],
+        Bahrain: ["29.5"],
+        UAE: ["29.5", "26.5"],
+        Oman: ["29.5", "26.5", "23.5", "21", "18.5", "15.5", "13"],
+        Yemen: ["29.5", "26.5", "23.5", "21", "18.5", "15.5", "13"],
+        Djibouti: ["29.5", "26.5", "23.5"],
+        Somalia: ["29.5", "26.5", "23.5", "21", "18.5"],
+        Sudan: ["26.5", "23.5", "21"],
+        Egypt: ["29.5", "26.5", "23.5", "21", "18.5", "15.5"],
+        Libya: ["29.5", "26.5", "23.5", "21", "18.5", "15.5"],
+        Tunisia: ["23.5", "21", "18.5", "15.5"]
+    }
+
+
+
+
+
+}
+
+
+
+
+
+function nothing() {
+
+    var r = 0;
+}
+
+function countryTemp(tempId, tempValue, tempClass, altValue) {
+    var self = this;
+    self.tempId = ko.observable(tempId);
+    self.tempValue = ko.observable(tempValue);
+
+    self.altId = ko.observable(tempId);
+    self.altValue = ko.observable(altValue);
+
+    self.tempClass = ko.observable(tempClass);
+
+}
+
+
+
+function FilterItem(entityId, isSelected, name) {
+    var self = this;
+    self.entityId = entityId;
+    self.name = name;
+    self.isSelected = ko.observable(isSelected).extend({ booleanValue: null });
+
+    self.Click = function () {
+        self.isSelected(!self.isSelected());
+    };
+}
+
+
+function PlantType() {
+    return {
+        Tab: 2,
+        Tree: new FilterItem(1, false, "Tree"),
+        Shrub: new FilterItem(2, false, "Shrub"),
+        Palm: new FilterItem(3, false, "Palm"),
+        Vine: new FilterItem(4, false, "Vine"),
+        Groundcover: new FilterItem(5, false, "Groundcover"),
+        Grass: new FilterItem(6, false, "Grass"),
+        Cactus: new FilterItem(9, false, "Cactus"),
+        Lawn: new FilterItem(10, false, "Lawn")
+    };
+}
+
+function Light() {
+
+    return {
+        Tab: 2,
+        Full: new FilterItem(1, false, "Full"),
+        Part: new FilterItem(2, false, "Part"),
+        Shade: new FilterItem(3, false, "Shade"),
+
+    };
+}
+
+function Soil() {
+    return {
+        Tab: 2,
+        Clay: new FilterItem(1, false, "Clay"),
+        Loam: new FilterItem(2, false, "Loam"),
+        Sand: new FilterItem(3, false, "Sand"),
+
+    };
+};
+
+function SoilPh() {
+
+    return {
+        Tab: 2,
+        Acidic: new FilterItem(1, false, "Acidic"),
+        Neutral: new FilterItem(2, false, "Neutral"),
+        Alkaline: new FilterItem(3, false, "Alkaline"),
+
+    };
+
+};
+
+function Water() {
+
+    return {
+        Tab: 2,
+        High: new FilterItem(1, false, "High"),
+        Moderate: new FilterItem(2, false, "Moderate"),
+        Low: new FilterItem(3, false, "Low"),
+
+    };
+
+};
+
+function Usage() {
+
+    return {
+        Tab: 3,
+        Screen: new FilterItem(1, false, "Screen"),
+        Hedge: new FilterItem(2, false, "Hedge"),
+        Topiary: new FilterItem(3, false, "Topiary"),
+        Bonsai: new FilterItem(4, false, "Bonsai"),
+        Espalier: new FilterItem(5, false, "Espalier"),
+        Specimen: new FilterItem(6, false, "Specimen"),
+        BorderPlant: new FilterItem(7, false, "Border Plant"),
+        MassPlanting: new FilterItem(8, false, "Mass Planting"),
+        Indoor: new FilterItem(9, false, "Indoor"),
+        Container: new FilterItem(10, false, "Container"),
+        SportsField: new FilterItem(11, false, "Sports Field"),
+        Shade: new FilterItem(12, false, "Shade"),
+        Windbreak: new FilterItem(13, false, "Windbreak"),
+        Edible: new FilterItem(14, false, "Edible"),
+        Medicinal: new FilterItem(15, false, "Medicinal"),
+        Wildlife: new FilterItem(16, false, "Wildlife"),
+        ErosionControl: new FilterItem(17, false, "Erosion Control"),
+        Street: new FilterItem(18, false, "Street"),
+        CutFlowers: new FilterItem(19, false, "Cut Flowers"),
+        PollutionTolerantUrban: new FilterItem(20, false, "Pollution Tolerant Urban"),
+        Reclamation: new FilterItem(21, false, "Reclamation"),
+        IntensiveGreenRoof: new FilterItem(22, false, "Intensive Green Roof"),
+        ExtensiveGreenRoof: new FilterItem(23, false, "Extensive Green Roof"),
+        Facade: new FilterItem(24, false, "Facade"),
+        NativeToLebanon: new FilterItem(25, false, "Native To Lebanon"),
+        GroundCover: new FilterItem(30, false, "Ground Cover"),
+        Trellis: new FilterItem(31, false, "Trellis"),
+
+    };
+
+};
+
+function PlantShape() {
+
+    return {
+        Tab: 4,
+        Pyramidal: new FilterItem(1, false, "Pyramidal"),
+        Round: new FilterItem(2, false, "Round"),
+        Columnar: new FilterItem(3, false, "Columnar"),
+        oval: new FilterItem(4, false, "Oval"),
+        Spreading: new FilterItem(5, false, "Spreading"),
+        Upright: new FilterItem(6, false, "Spreading"),
+        Weeping: new FilterItem(7, false, "Weeping"),
+        Vase: new FilterItem(8, false, "Vase"),
+        Palm: new FilterItem(9, false, "Palm"),
+
+    };
+
+};
+
+function PlantHeightRange() {
+
+    return {
+        Tab: 4,
+        LeZeroFive: new FilterItem(1, false, "0-0.5 m"),
+        LeOne: new FilterItem(2, false, "0.5-1 m"),
+        LeOnePointFive: new FilterItem(3, false, "1-1.5 m"),
+        LeThree: new FilterItem(4, false, "1.5-3 m"),
+        LeFive: new FilterItem(5, false, "3-5 m"),
+        LeEight: new FilterItem(6, false, "5-8 m"),
+        LeFifteen: new FilterItem(7, false, "8-15 m"),
+        LeTwentyThree: new FilterItem(8, false, "15-23 m"),
+        OvTwentyThree: new FilterItem(9, false, ">23 m"),
+
+
+    };
+
+};
+function PlantSpreadRange() {
+
+    return {
+        Tab: 4,
+        LessZeroFive: new FilterItem(1, false, "0-0.5 m"),
+        LessOne: new FilterItem(2, false, "0.5-1 m"),
+        LessOnePointFive: new FilterItem(3, false, "1-1.5 m"),
+        LessThree: new FilterItem(4, false, "1.5-3 m"),
+        LessFive: new FilterItem(5, false, "3-5 m"),
+        LessEight: new FilterItem(6, false, "5-8 m"),
+        LessTen: new FilterItem(7, false, "8-10 m"),
+        LessFifteen: new FilterItem(8, false, "10-15 m"),
+        OverFifteen: new FilterItem(9, false, ">15 m"),
+    };
+};
+
+
+
+function TimeToFullGrowthRange() {
+
+    return {
+        Tab: 4,
+        LessOneY: new FilterItem(1, false, "1 Year"),
+        LessTowY: new FilterItem(2, false, "1 to 2 Years"),
+        LessFiveY: new FilterItem(3, false, "2 to 5 Years"),
+        LessTenY: new FilterItem(4, false, "5 to 10 Years"),
+        LessTwentyY: new FilterItem(5, false, "10 to 20 Years"),
+        LessFiftyY: new FilterItem(6, false, "20 to 50 Years"),
+        OverFiftyY: new FilterItem(7, false, "More than 50 Years"),
+
+    };
+
+};
+
+function ColorGrowingSeason() {
+
+    return {
+        Tab: 5,
+        Green: new FilterItem(1, false, "Green"),
+        Purple: new FilterItem(6, false, "Purple"),
+        Red: new FilterItem(5, false, "Red"),
+        Yellow: new FilterItem(2, false, "Yellow"),
+        BlueGreen: new FilterItem(15, false, "Blue Green"),
+        Silver: new FilterItem(8, false, "Silver"),
+        Variegated: new FilterItem(9, false, "Variegated"),
+
+    };
+};
+
+function ColorChangingSeason() {
+
+    return {
+        Tab: 5,
+        Green: new FilterItem(1, false, "Green"),
+        Purple: new FilterItem(6, false, "Purple"),
+        Red: new FilterItem(5, false, "Red"),
+        Yellow: new FilterItem(2, false, "Yellow"),
+        Orange: new FilterItem(3, false, "Orange"),
+        Brown: new FilterItem(4, false, "Brown"),
+        Copper: new FilterItem(7, false, "Copper"),
+        SameAsGrowing: new FilterItem(8, false, "Same As Growing"),
+
+
+    };
+
+};
+
+function FlowerColor() {
+
+    return {
+        Tab: 6,
+        White: new FilterItem(11, false, "White"),
+        Green: new FilterItem(1, false, "Green"),
+        Purple: new FilterItem(6, false, "Purple"),
+        Red: new FilterItem(5, false, "Red"),
+        Yellow: new FilterItem(2, false, "Yellow"),
+        Orange: new FilterItem(3, false, "Orange"),
+        Brown: new FilterItem(4, false, "Brown"),
+        Pink: new FilterItem(12, false, "Pink"),
+        Blue: new FilterItem(10, false, "Blue"),
+
+    };
+};
+
+function FruitColor() {
+
+    return {
+        Tab: 7,
+        White: new FilterItem(11, false, "White"),
+        Green: new FilterItem(1, false, "Green"),
+        Purple: new FilterItem(6, false, "Purple"),
+        Red: new FilterItem(5, false, "Red"),
+        Yellow: new FilterItem(2, false, "Yellow"),
+        Orange: new FilterItem(3, false, "Orange"),
+        Brown: new FilterItem(4, false, "Brown"),
+        Pink: new FilterItem(12, false, "Pink"),
+        Blue: new FilterItem(10, false, "Blue"),
+        Black: new FilterItem(14, false, "Black"),
+        Grey: new FilterItem(13, false, "Grey"),
+
+    };
+};
+
+function FruitSize() {
+
+    return {
+        Tab: 7,
+        LessOnePointFive: new FilterItem(1, false, "0 - 1.5 cm"),
+        LessThree: new FilterItem(2, false, "1.5 - 3 cm"),
+        LessSeven: new FilterItem(3, false, "3 - 7 cm"),
+        LessTen: new FilterItem(4, false, "7 - 10 cm"),
+        LessTwenty: new FilterItem(5, false, "10 - 20 cm"),
+        overTwenty: new FilterItem(6, false, "Over 20 cm"),
+
+    };
+};
+
+function TrunkEstheticValue() {
+
+    return {
+        Tab: 8,
+        Showy: new FilterItem(1, false, "Showy"),
+        NotShowy: new FilterItem(2, false, "Not Showy"),
+        Smooth: new FilterItem(3, false, "Smooth"),
+        IntermediateTexture: new FilterItem(4, false, "Intermediate Texture"),
+        RoughTexture: new FilterItem(5, false, "Rough Texture"),
+        Fissured: new FilterItem(6, false, "Fissured"),
+        Colored: new FilterItem(7, false, "Colored"),
+        Spines: new FilterItem(8, false, "Spines"),
+        Papery: new FilterItem(9, false, "Papery"),
+
+    };
+};
+
+function LeafVenation() {
+
+    return {
+        Tab: 2,
+        NearlyInvisible: new FilterItem(1, false, "Nearly Invisible"),
+        Parallel: new FilterItem(2, false, "Parallel"),
+        Bowed: new FilterItem(3, false, "Bowed"),
+        Pinnate: new FilterItem(4, false, "Pinnate"),
+        Brachidodrome: new FilterItem(5, false, "Brachidodrome"),
+        Palmate: new FilterItem(6, false, "Palmate"),
+        Reticualte: new FilterItem(7, false, "Reticualte"),
+        Rolled: new FilterItem(8, false, "Rolled"),
+        Folded: new FilterItem(9, false, "Folded"),
+
+    };
+};
+
+function LeafType() {
+
+    return {
+        Tab: 3,
+        Simple: new FilterItem(1, false, "Simple"),
+        Trifoliate: new FilterItem(2, false, "Trifoliate"),
+        PalmatelyCompound: new FilterItem(3, false, "Palmately Compound"),
+        Costapalmate: new FilterItem(4, false, "Costapalmate"),
+        EvenPinnatelyCompound: new FilterItem(5, false, "EvenPinnately Compound"),
+        BipinnatelyCompound: new FilterItem(6, false, "Bipinnately Compound"),
+        OddPinnatelyCompund: new FilterItem(7, false, "OddPinnately Compund"),
+
+
+    };
+
+};
+
+function LeafArrangement() {
+
+    return {
+        Tab: 4,
+        Alternate: new FilterItem(1, false, "Alternate"),
+        Opposite: new FilterItem(2, false, "Opposite"),
+        Whorled: new FilterItem(3, false, "Whorled"),
+        Spiral: new FilterItem(4, false, "Spiral"),
+
+    };
+};
+
+function LeafLengthRange() {
+
+    return {
+        Tab: 4,
+        LessFive: new FilterItem(1, false, "Less than 5 cm"),
+        LessTen: new FilterItem(3, false, "5 - 10 cm"),
+        LessTwenty: new FilterItem(4, false, "10 - 20 cm"),
+        LessThirty: new FilterItem(5, false, "20 - 30 cm"),
+        LessFifty: new FilterItem(6, false, "30 - 50 cm"),
+        LessEighty: new FilterItem(7, false, "50 - 80 cm"),
+        OverEighty: new FilterItem(8, false, "Over 80 cm"),
+
+    };
+
+};
+
+function LeafMargin() {
+
+    return {
+        Tab: 4,
+        Undulate: new FilterItem(1, false, "Undulate"),
+        Entire: new FilterItem(2, false, "Entire"),
+        Serrulate: new FilterItem(3, false, "Serrulate"),
+        Dentate: new FilterItem(4, false, "Dentate"),
+        Lobate: new FilterItem(5, false, "Lobate"),
+        Revolute: new FilterItem(6, false, "Revolute"),
+        TerminalSpine: new FilterItem(7, false, "Terminal Spine"),
+        Ciliate: new FilterItem(8, false, "Ciliate"),
+        Pectinate: new FilterItem(9, false, "Pectinate"),
+        Crenate: new FilterItem(10, false, "Crenate"),
+        Cleft: new FilterItem(11, false, "Cleft"),
+        Parted: new FilterItem(12, false, "Parted"),
+        Incised: new FilterItem(13, false, "Incised"),
+        Spiny: new FilterItem(14, false, "Spiny"),
+        Serrate: new FilterItem(15, false, "Serrate"),
+        DoubleSerrate: new FilterItem(16, false, "DoubleSerrate"),
+
+    };
+};
+
+function LeafShape() {
+
+    return {
+        Tab: 4,
+        Scale: new FilterItem(1, false, "Scale"),
+        Needle: new FilterItem(2, false, "Needle"),
+        Linear: new FilterItem(3, false, "Linear"),
+        Oblanceolate: new FilterItem(4, false, "Oblanceolate"),
+        Spatulate: new FilterItem(5, false, "Spatulate"),
+        Rhomboid: new FilterItem(6, false, "Rhomboid"),
+        Awl: new FilterItem(7, false, "Awl"),
+        Lanceolate: new FilterItem(8, false, "Lanceolate"),
+        Oval: new FilterItem(9, false, "Oval"),
+        Ovate: new FilterItem(10, false, "Ovate"),
+        Oblong: new FilterItem(11, false, "Oblong"),
+        Obovate: new FilterItem(12, false, "Obovate"),
+        Fan: new FilterItem(13, false, "Fan"),
+        Deltoid: new FilterItem(14, false, "Deltoid"),
+        Orbiculate: new FilterItem(15, false, "Orbiculate"),
+        Cordate: new FilterItem(16, false, "Cordate"),
+        Star: new FilterItem(17, false, "Star"),
+        SagittateArrow: new FilterItem(18, false, "Sagittate Arrow"),
+        SwordShaped: new FilterItem(19, false, "Sword Shaped"),
+        BoatShaped: new FilterItem(20, false, "Boat Shaped"),
+
+    };
+
+};
+
+
+
+
+
+
+
+/********************************* Managing Buttons *********************************/
+
+
+function clearTab(searchType, tabNumber) {
+
+    if (searchType == 1) {
+
+        switch (tabNumber) {
+
+            case 2:
+                viewModel.plantType = new PlantType();
+                viewModel.light = new Light();
+                viewModel.soil = new Soil();
+                viewModel.soilPh = new SoilPh();
+                viewModel.water = new Water();
+                viewModel.heatTolerance = ko.observable();
+                viewModel.droughtTolerance = ko.observable();
+                viewModel.frostTolerance = ko.observable();
+                viewModel.saltTolerance = ko.observable();
+                viewModel.lifeCycle = ko.observable();
+                break;
+
+            case 3:
+                viewModel.usage = new Usage();
+                break;
+
+            case 4:
+                viewModel.plantShape = new PlantShape();
+                viewModel.plantHeightRange = new PlantHeightRange();
+                viewModel.plantSpreadRange = new PlantSpreadRange();
+                viewModel.timeToFullGrowthRange = new TimeToFullGrowthRange();
+                viewModel.growthRate = ko.observable();
+                break;
+
+            case 5:
+                viewModel.colorGrowingSeason = new ColorGrowingSeason();
+                viewModel.colorChangingSeason = new ColorChangingSeason();
+                viewModel.leafPersistance = ko.observable();
+                viewModel.scent = ko.observable();
+                break;
+
+            case 6:
+                viewModel.flowerColor = new FlowerColor();
+                viewModel.flowerScent = ko.observable();
+                viewModel.flowerSeason = ko.observable();
+                viewModel.flowerShowiness = ko.observable();
+                break;
+
+            case 7:
+                viewModel.fruitColor = new FruitColor();
+                viewModel.fruitShowiness = ko.observable();
+                viewModel.fruitTypeCategory = ko.observable();
+                viewModel.fruitSeason = ko.observable();
+                viewModel.fruitSize = new FruitSize();
+                break;
+
+            case 8:
+                viewModel.trunkEstheticValue = new TrunkEstheticValue();
+                viewModel.crownshaft = ko.observable();
+                break;
+
+            case 9:
+                viewModel.ediblePlantParts = ko.observable();
+                viewModel.fruitLeavesFlowerLitter = ko.observable();
+                viewModel.surfaceRooting = ko.observable();
+                viewModel.plantToxicity = ko.observable();
+                viewModel.invasivePotential = ko.observable();
+                viewModel.pruningRequirements = ko.observable();
+                viewModel.suceptibilityToDiseases = ko.observable();
+                viewModel.lifeSpan = ko.observable();
+                break;
+        }
+
+    }
+    if (searchType == 2) {
+
+        switch (tabNumber) {
+
+            case 1:
+                viewModel.plantType = new PlantType();
+                viewModel.plantShape = new PlantShape();
+                viewModel.plantHeightRange = new PlantHeightRange();
+                viewModel.plantSpreadRange = new PlantSpreadRange();
+                break;
+
+            case 2:
+                viewModel.leafType = new LeafType();
+                viewModel.scent = ko.observable();
+                viewModel.leafPersistance = ko.observable();
+                viewModel.leafArrangement = new LeafArrangement();
+                break;
+
+            case 3:
+
+
+                viewModel.leafVenation = new LeafVenation();
+                viewModel.colorGrowingSeason = new ColorGrowingSeason();
+                viewModel.colorChangingSeason = new ColorChangingSeason();
+                viewModel.leafLengthRange = new LeafLengthRange();
+                break;
+
+            case 4:
+                viewModel.leafMargin = new LeafMargin();
+                break;
+
+            case 5:
+
+                viewModel.leafShape = new LeafShape();
+                break;
+
+            case 6:
+                viewModel.flowerColor = new FlowerColor();
+                viewModel.flowerScent = ko.observable();
+                viewModel.flowerSeason = ko.observable();
+                viewModel.flowerShowiness = ko.observable();
+                break;
+
+            case 7:
+                viewModel.fruitColor = new FruitColor();
+                viewModel.fruitShowiness = ko.observable();
+                viewModel.fruitTypeCategory = ko.observable();
+                viewModel.fruitSeason = ko.observable();
+                viewModel.fruitSize = new FruitSize();
+                break;
+
+            case 8:
+
+                viewModel.trunkEstheticValue = new TrunkEstheticValue();
+                viewModel.crownshaft = ko.observable();
+                break;
+
+
+        }
+
+
+    }
+
+
+    ko.applyBindings(viewModel);
+
+}
+
+var baseUrl = $('base').attr('href');
+
+function clearAll() {
+
+    window.location = "";
+
+
+}
+
+function btnSubmit() {
+
+
+    ko.utils.postJson(baseUrl + "Search/SearchByCriteria", { viewModel: ko.mapping.toJS(viewModel) });
+
+}
+
+function btnSubmitIdentification() {
+
+    ko.utils.postJson(baseUrl + "Search/SearchByIdentification", { viewModel: ko.mapping.toJS(viewModel) });
+
+}
+
+/********************************* Extenders *********************************/
+
+
+ko.extenders["booleanValue"] = function (target) {
+    target.formattedValue = ko.computed({
+        read: function () {
+            if (target() === true) return "True";
+            else if (target() === false) return "False";
+        },
+        write: function (newValue) {
+            if (newValue) {
+                if (newValue === "False") target(false);
+                else if (newValue === "True") target(true);
+            }
+        }
+    });
+
+    target.formattedValue(target());
+    return target;
+};
+

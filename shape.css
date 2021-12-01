@@ -232,19 +232,21 @@ label::before {
 }
 
 label img {
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
     transition-duration: 0.2s;
     transform-origin: 50% 50%;
+    margin-top: 50px;
 }
 
 :checked+label {
-    border-color: #ddd;
+    border-color:green;
+    
 }
 
 :checked+label::before {
-    content: "✓  ";
-    background-color: grey;
+    content:"+";
+    background-color: green;
     transform: scale(1);
 }
 
@@ -253,3 +255,19 @@ label img {
     box-shadow: 0 0 5px #333;
     z-index: -1;
 }
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    color: chartreuse;
+  }
+.tit{margin-left: 12px; 
+    text-align: center;}
+.imgleft{float: left;}
+.imgright{display: block;align-items: center;}
+.plant_sec{display: inline;}

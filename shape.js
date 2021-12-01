@@ -263,7 +263,7 @@ var checkbox_select = function(params) {
 
     // Delete the original form submit
     $(params.selector).find('input[type=submit]').remove();
-
+    
     // Put finalized markup into page.
     $_native_select.after($_parent_div);
 

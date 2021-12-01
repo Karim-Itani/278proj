@@ -1,0 +1,1242 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body, table, caption, td, tr, th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    /*color: #ff0000;*/
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    /*color: #001eff;*/
+    color: black;
+}
+
+a:active, a:focus {
+    outline: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    border: 0px;
+}
+/*-------------------------------Font Face------------------------------------*/
+
+/*-------------------------------------------------------------------*/
+.left {
+    float: left !important;
+}
+
+.clear {
+    clear: both !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.bgnone {
+    background: none !important;
+}
+
+.padding {
+    padding: 0px !important;
+}
+
+.margin {
+    margin: 0px !important;
+}
+
+.paddingR0 {
+    padding-right: 0px !important;
+}
+
+.width407 {
+    width: 407px !important;
+}
+
+.width279 {
+    width: 260px !important;
+}
+
+.width295 {
+    width: 295px !important;
+    padding-left: 30px !important;
+}
+
+.width625 {
+    width: 625px !important;
+}
+
+.width370 {
+    width: 370px !important;
+    padding-left: 40px !important;
+}
+
+.width338 {
+    width: 338px !important;
+}
+
+.width95 {
+    width: 95px !important;
+}
+
+.width360 {
+    width: 360px !important;
+    padding-left: 30px !important;
+}
+
+.width225 {
+    width: 225px !important;
+    padding-left: 40px !important;
+}
+
+.width314 {
+    width: 314px !important;
+}
+
+.width265 {
+    width: 255px !important;
+    padding-left: 30px !important;
+}
+/*-------------------------------------------------------------------BODY PARTS*/
+.wrapper {
+    width: 1038px;
+    margin: 0 auto;
+}
+
+/** header starts**/
+.header {
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #61bdd8;
+    border-top: 3px solid #fff;
+    /*border-top:3px solid #1695c0;*/
+}
+
+.borderTblue {
+    border-top: 3px solid #1695c0;
+}
+
+.header_left {
+    width: 390px;
+    height: 235px;
+    margin-top: -3px;
+    float: left;
+    background: url('/images/header-bg.jpg');
+
+}
+
+    .header_left .logo {
+        display: block;
+        float: left;
+        margin-top: 25px;
+        margin-left: 60px;
+        font-family: Arial;
+        line-height: 1.4;
+    }
+
+    .header_left .logo .fontsmall {
+        display: block;
+        color: #000;
+        font-size: 13px;
+    }
+
+    .header_left .logo .fontnormal {
+        display: block;
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .header_left .logo .fontbig {
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .header_left a.backHome {
+        display: block;
+        float: left;
+        font-size: 24px;
+        color: #000;
+        font-weight: bold;
+        background: url(images/black_arrow.png) no-repeat left center;
+        padding-left: 20px;
+        margin-left: 39px;
+        margin-top: 25px;
+    }
+
+        .header_left a.backHome:hover {
+            color: #fff;
+            background: url(images/white_arrow.png) no-repeat left center;
+        }
+
+.header_right {
+    width: 648px;
+    float: right;
+}
+
+.header_right_section {
+    width: 216px;
+    float: right;
+    background: url(images/header-box-bg.png) repeat-y left top;
+    text-align: center;
+    height: 235px;
+    margin-top: -3px;
+    cursor: pointer;
+}
+
+    .header_right_section span {
+        display: block;
+        float: left;
+        width: 100%;
+        min-height: 170px;
+        padding-top: 17px;
+    }
+
+    .header_right_section p {
+        color: #000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+/** header ends **/
+.H_S_active {
+    height: 236px;
+    margin-bottom: -1px;
+}
+
+    .H_S_active p {
+        color: #63ac4a;
+    }
+
+.body_part {
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.main_contain {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.top_des {
+    width: 100%;
+    float: left;
+    min-height: 55px;
+    padding-top: 10px;
+}
+
+    .top_des p {
+        font-size: 11px;
+        color: #000;
+    }
+
+        .top_des p span {
+            color: #cf0000;
+        }
+
+.col_left {
+    width: 428px;
+    float: left;
+}
+
+.country_map {
+    width: 100%;
+    clear: both;
+    float: left;
+    padding-top: 20px;
+}
+
+
+.country_hldr {
+    margin: 0 auto;
+    background: url('../../Images/Search/map/map.png') no-repeat left top;
+    clear: both;
+    width: 940px;
+    height: 500px;
+    position: relative;
+}
+
+    .country_hldr img {
+        cursor: pointer;
+    }
+
+        .country_hldr img.disabled {
+            display: block;
+            opacity: 0;
+            filter: alpha(opacity= 0);
+        }
+
+            .country_hldr img.disabled:hover {
+                opacity: 0.2;
+                filter: alpha(opacity= 20);
+            }
+
+#map_01 {
+    position: absolute;
+    left: 36px;
+    top: 136px;
+    width: 135px;
+    height: 158px;
+    transform: rotate(0deg);
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Opera, Chrome, and Safari */
+}
+
+#map_02 {
+    position: absolute;
+    left: 34px;
+    top: 128px;
+    width: 100px;
+    height: 89px;
+}
+
+#map_03 {
+    position: absolute;
+    left: 127px;
+    top: 16px;
+    width: 219px;
+    height: 226px;
+}
+
+#map_04 {
+    position: absolute;
+    left: 80px;
+    top: 31px;
+    width: 133px;
+    height: 104px;
+}
+
+#map_05 {
+    position: absolute;
+    left: 299px;
+    top: 12px;
+    width: 44px;
+    height: 91px;
+}
+
+#map_06 {
+    position: absolute;
+    left: 317px;
+    top: 63px;
+    width: 168px;
+    height: 171px;
+}
+
+#map_07 {
+    position: absolute;
+    left: 478px;
+    top: 79px;
+    width: 121px;
+    height: 127px;
+}
+
+#map_08 {
+    position: absolute;
+    left: 450px;
+    top: 186px;
+    width: 182px;
+    height: 181px;
+}
+
+#map_09 {
+    position: absolute;
+    left: 588px;
+    top: 13px;
+    width: 69px;
+    height: 63px;
+}
+
+#map_10 {
+    position: absolute;
+    left: 622px;
+    top: 12px;
+    width: 110px;
+    height: 104px;
+}
+
+#map_11 {
+    position: absolute;
+    left: 575px;
+    top: 63px;
+    width: 17px;
+    height: 50px;
+    z-index: 100;
+}
+
+#map_12 {
+    position: absolute;
+    left: 584px;
+    top: 44px;
+    width: 16px;
+    height: 23px;
+    z-index: 100;
+}
+
+#map_13 {
+    position: absolute;
+    left: 753px;
+    top: 150px;
+    width: 12px;
+    height: 22px;
+    z-index: 100;
+}
+
+#map_14 {
+    position: absolute;
+    left: 585px;
+    top: 61px;
+    width: 46px;
+    height: 54px;
+    z-index: 100;
+}
+
+#map_15 {
+    height: 207px;
+    left: 580px;
+    position: absolute;
+    top: 74px;
+    width: 229px;
+}
+
+#map_16 {
+    position: absolute;
+    left: 699px;
+    top: 102px;
+    width: 29px;
+    height: 21px;
+}
+
+#map_17 {
+    position: absolute;
+    left: 763px;
+    top: 147px;
+    width: 52px;
+    height: 50px;
+    z-index: 100;
+}
+
+#map_18 {
+    position: absolute;
+    left: 771px;
+    top: 158px;
+    width: 83px;
+    height: 111px;
+}
+
+#map_19 {
+    position: absolute;
+    left: 673px;
+    top: 237px;
+    width: 115px;
+    height: 81px;
+}
+
+#map_20 {
+    position: absolute;
+    left: 606px;
+    top: 248px;
+    width: 76px;
+    height: 73px;
+}
+
+#map_21 {
+    position: absolute;
+    left: 571px;
+    top: 289px;
+    width: 164px;
+    height: 142px;
+}
+
+#map_22 {
+    position: absolute;
+    left: 665px;
+    top: 315px;
+    width: 20px;
+    height: 25px;
+}
+
+
+#map_23 {
+    position: absolute;
+    left: 657px;
+    top: 324px;
+    width: 112px;
+    height: 170px;
+}
+
+#map_24 {
+    position: absolute;
+    left: 472px;
+    top: 320px;
+    width: 132px;
+    height: 110px;
+}
+
+.map_text {
+    position: absolute;
+    left: 100px;
+    top: -20px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+.country_list {
+    width: 100%;
+    float: left;
+}
+
+    .country_list h3 {
+        color: #88bf76;
+        font-size: 14px;
+    }
+
+    .country_list ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+        .country_list ul li {
+            display: inline;
+            float: left;
+            font-size: 14px;
+            font-weight: bold;
+            padding-right: 25px;
+            color: #88bf76;
+            cursor: pointer;
+            text-decoration: underline;
+            padding: 8px 17px 0px 0px;
+        }
+
+.disabled {
+    display: none;
+}
+
+.country_list ul li.mapactive {
+    color: #000;
+    background-color: white;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+.plant_sec {
+    width: 100%;
+    float: left;
+    padding-bottom: 30px;
+}
+
+    .plant_sec h1, .plant_sec h1:visited, .plant_sec h1:active {
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 20px;
+        color: black;
+    }
+
+
+
+.plant_cat, .light_cat, .Soil_cat, .water_cat, .plant_shape, .leaf_venation, .leaf_venation2, .leaf_type {
+    width: 130px;
+    float: left;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    text-align: center;
+    height: 125px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.plant_shape {
+    width: 95px;
+}
+
+    .plant_cat span, .light_cat span, .Soil_cat span, .water_cat span, .plant_shape span, .leaf_venation span, .leaf_venation2 span, .leaf_type span {
+        display: block;
+        float: left;
+        height: 95px;
+        padding-top: 5px;
+        width: 100%;
+    }
+
+.light_cat, .Soil_cat, .water_cat {
+    width: 67px;
+    height: 84px;
+}
+
+    .light_cat span, .Soil_cat span, .water_cat span {
+        height: 58px;
+        padding-top: 8px;
+    }
+
+.color_cat, .color_cat2 {
+    width: 70px;
+    float: left;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 0;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+    .color_cat span, .color_cat2 span {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .color_cat p, .color_cat2 p {
+        padding-top: 13px;
+        clear: both;
+        line-height: 15px;
+    }
+
+.color_flower, .color_fruit {
+    width: 130px;
+    float: left;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    padding: 5px 0px;
+}
+
+    .color_flower span, .color_fruit span {
+        display: block;
+        float: left;
+        width: 100%;
+    }
+
+    .color_flower p, .color_fruit p {
+        padding-top: 6px;
+        clear: both;
+        line-height: 15px;
+    }
+
+.leaf_venation, .leaf_venation2 {
+    height: auto;
+    padding-bottom: 5px;
+    width: 100px;
+}
+
+    .leaf_venation span, .leaf_venation2 span {
+        height: 120px;
+    }
+
+.leaf_type {
+    height: 145px;
+    padding-bottom: 5px;
+}
+
+    .leaf_type span {
+        height: 110px;
+    }
+
+    .plant_cat:hover, .light_cat:hover, .Soil_cat:hover, .water_cat:hover, .plant_shape:hover, .color_cat:hover, .color_cat2:hover, .color_flower:hover, .color_flower:hover, .color_fruit:hover, .leaf_venation:hover, .leaf_type:hover, .leaf_venation2:hover {
+        background: #edeeed;
+        border-color: #45773d;
+    }
+
+.plant_cat_selected {
+    background: #edeeed;
+    border-color: #45773d !important;
+}
+
+
+
+.col_right {
+    width: 580px;
+    float: left;
+    border-left: 1px solid #dfdfdf;
+    min-height: 510px;
+    margin-bottom: 20px;
+    padding-left: 25px;
+}
+
+.plant_chackbox {
+    width: 100%;
+    float: left;
+}
+
+    .plant_chackbox ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+        .plant_chackbox ul li {
+            width: 100%;
+            float: left;
+            clear: both;
+            padding-top: 10px;
+        }
+
+            .plant_chackbox ul li span {
+                display: block;
+                float: left;
+                width: 30%;
+                padding-right: 3%;
+                margin-bottom: 1%;
+            }
+
+                .plant_chackbox ul li span.redio_title {
+                    font-weight: bold;
+                    width: 75px;
+                    padding-right: 0px;
+                }
+
+                .plant_chackbox ul li span small {
+                    font-size: 14px;
+                    color: #adadad;
+                }
+
+            .plant_chackbox ul li .plant_time, .plant_chackbox ul li .plant_time2 {
+                font-weight: bold;
+                width: 100%;
+                float: left;
+            }
+
+/*.plant_chackbox ul li.plant_time span
+                {
+                    width: 22%;
+                }*/
+
+
+.footer {
+    width: 100%;
+    float: left;
+    position: relative;
+    height: 32px;
+    background: #dfdfdf;
+    margin-top: 30px;
+}
+
+.submit_button {
+    bottom: -77px;
+    height: 63px;
+    position: absolute;
+    right: 120px;
+    width: 63px;
+    z-index: 5;
+}
+
+.stepSubmit {
+    display: block;
+    float: left;
+    background: url(images/step-next-active.png) no-repeat left top;
+    line-height: 63px;
+    height: 63px;
+    width: 63px;
+    text-align: center;
+    color: #fff;
+    z-index: 2;
+    border: 0px;
+    cursor: pointer;
+}
+
+    .stepSubmit:hover {
+        background: url(images/step-next.png) no-repeat left top;
+        color: #000;
+    }
+
+.footer_link {
+    bottom: -61px;
+    position: absolute;
+    width: 672px;
+    z-index: 3;
+}
+
+    .footer_link span {
+        float: right;
+        display: block;
+        padding: 0px 18px;
+        border-right: 1px solid #fff;
+        line-height: 32px;
+        height: 32px;
+    }
+
+        .footer_link span a {
+            color: #000;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+.field_reset {
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+/*--------------------------------Plant Identification-----------------------------------*/
+
+
+.margin_leaf {
+    width: 100%;
+    float: left;
+}
+
+    .margin_leaf h1 {
+        font-size: 25px;
+        font-weight: normal;
+        line-height: 20px;
+        padding-bottom: 20px;
+    }
+
+.margin_leaf_hldr {
+    width: 154px;
+    float: left;
+    text-align: center;
+    height: 155px;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+    padding-top: 5px;
+}
+
+    .margin_leaf_hldr span {
+        display: block;
+        float: left;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+.shape_leaf {
+    width: 806px;
+    margin: 0 auto;
+    clear: both;
+}
+
+.shape_leaf_hldr {
+    width: 130px;
+    float: left;
+    padding-bottom: 15px;
+    text-align: center;
+    height: 135px;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+    .shape_leaf_hldr span {
+        display: block;
+        float: left;
+        width: 100%;
+        height: 125px;
+    }
+
+    .margin_leaf_hldr:hover, .shape_leaf_hldr:hover {
+        background: #edeeed;
+        border-color: #45773d;
+    }
+
+.weather_left {
+    width: 400px;
+    float: left;
+    clear: both;
+    padding-left: 65px;
+    padding-top: 10px;
+}
+
+    .weather_left ul {
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+        .weather_left ul li {
+            clear: both;
+            float: left;
+            width: 100%;
+            padding-top: 1px;
+        }
+
+            .weather_left ul li span {
+                display: block;
+                float: left;
+                margin-right: 5px;
+                line-height: 25px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+                .weather_left ul li span.weather_color {
+                    background: #950a05;
+                    line-height: 23px;
+                    height: 23px;
+                    border: 3px solid #fff;
+                    width: 80px;
+                    color: #fff;
+                    text-align: center;
+                    cursor: pointer;
+                }
+
+                    .weather_left ul li span.weather_color:hover, .weather_left ul li span.weather_color.active {
+                        border-color: #000;
+                    }
+
+                .weather_left ul li span.bgcolor_2 {
+                    background: #d80401;
+                }
+
+                .weather_left ul li span.bgcolor_3 {
+                    background: #f2080b;
+                }
+
+                .weather_left ul li span.bgcolor_4 {
+                    background: #f75804;
+                }
+
+                .weather_left ul li span.bgcolor_5 {
+                    background: #ef9120;
+                }
+
+                .weather_left ul li span.bgcolor_6 {
+                    background: #ffcb05;
+                }
+
+                .weather_left ul li span.bgcolor_7 {
+                    background: #fdee2f;
+                }
+
+                .weather_left ul li span.bgcolor_8 {
+                    background: #dbe314;
+                }
+
+                .weather_left ul li span.bgcolor_9 {
+                    background: #a0c92d;
+                }
+
+                .weather_left ul li span.bgcolor_10 {
+                    background: #4caf30;
+                }
+
+    .weather_left p {
+        clear: both;
+        padding-top: 10px;
+    }
+
+.weather_img {
+    width: 400px;
+    float: left;
+    margin-top: -60px;
+}
+
+.li100 li span {
+    width: 100% !important;
+    padding-right: 0 !important;
+}
+
+.step3back {
+    display: none;
+    background: url("images/step-next-active.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    bottom: 0;
+    color: #FFFFFF;
+    display: block;
+    height: 63px;
+    line-height: 63px;
+    position: absolute;
+    right: 74px;
+    text-align: center;
+    width: 63px;
+}
+
+.step3next {
+    display: none;
+    background: url("images/step-next-active.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    bottom: 0;
+    color: #FFFFFF;
+    display: block;
+    height: 63px;
+    line-height: 63px;
+    position: absolute;
+    right: -73px;
+    text-align: center;
+    width: 63px;
+}
+
+    .step3back:hover, .step3next:hover {
+        background: url("images/step-next.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+        color: #000000;
+        cursor: pointer;
+    }
+
+#plant_sec11 div.leaf_venation2 {
+    margin-right: 40px;
+}
+
+#plant_sec10 div.leaf_venation {
+    margin-bottom: 30px;
+}
+
+.plant_chackbox ul.plantfoliage li span {
+    width: 20%;
+}
+/* 
+----------------------by criteria ul li-------------------------------------*/
+
+#step-2 ul, #step-3 ul, #step-4 ul, #step-5 ul,
+#step-6 ul, #step-7 ul, #step-8 ul, #step-9 ul {
+    list-style: none;
+}
+
+.plant_GrowthRate li {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.plant_OutDoor li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 140px;
+    font-weight: 500;
+}
+
+.plant_Specialized li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 137px;
+    font-weight: 500;
+}
+
+.plant_NativeEnvironment li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 144px;
+    font-weight: 500;
+}
+
+.plant_HumanUse li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 55px;
+    font-weight: 500;
+}
+
+.plant_Building li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 21px;
+    font-weight: 500;
+}
+
+.plant_PlantHeight li {
+    font-weight: bold;
+}
+
+
+.plant_PlantSpread ul {
+    margin-top: 20px;
+}
+
+
+.plant_PlantSpread li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.plant_TimeToUltimateHeight li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 115px;
+    font-weight: bold;
+}
+
+.plant_TimeToUltimateHeight ul {
+    margin-top: 15px;
+}
+
+.plant_Persistence li {
+    float: left;
+    margin-right: 100px;
+}
+
+.plant_Persistence ul {
+    width: 600px;
+    margin-top: 10px;
+}
+
+.plant_Scent ul {
+    width: 600px;
+    margin-top: 10px;
+}
+
+.plant_Scent li {
+    float: left;
+    margin-right: 111px;
+}
+
+.plant_FlowerScent li {
+    float: left;
+    margin-right: 100px;
+    margin-top: 10px;
+}
+
+.plant_FlowerSeason li {
+    float: left;
+    margin-right: 115px;
+    margin-top: 10px;
+}
+
+.plant_FlowerShowiness li {
+    float: left;
+    margin-right: 130px;
+    margin-top: 10px;
+}
+
+.plant_FruitShowiness li {
+    float: left;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.plant_FruitType li {
+    float: left;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+
+.plant_FruitSeason li {
+    float: left;
+    margin-right: 130px;
+    margin-top: 10px;
+}
+
+.plant_FruitSize ul {
+    float: right;
+    margin-right: 390px;
+    margin-top: 10px;
+}
+
+.plant_FruitSize {
+    font-weight: bold;
+}
+
+.plant_TrunkEstheticValue li {
+    margin-top: 15px;
+}
+
+.plant_Crownshaft li {
+    margin-top: 15px;
+}
+
+.plant_EdiblePlantParts li, .FruitLeavesFlowerLitter li,
+.plant_SurfaceRooting li, .plant_PlantToxicity li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 100px;
+}
+
+.plant_InvasivePotential li, .plant_SuceptibilityToDiseases li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 145px;
+}
+
+.plant_PruningRequirements li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 120px;
+}
+
+.plant_LifeSpanx li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 145px;
+}
+
+.plant_Tolerence .plantHeat li {
+    float: left;
+    margin-right: 43px;
+    margin-top: 10px;
+}
+
+.plant_Tolerence .plantDrought li {
+    float: left;
+    margin-right: 39px;
+    margin-top: 10px;
+}
+
+.plant_Tolerence .plantFrost li {
+    float: left;
+    margin-right: 39px;
+    margin-top: 10px;
+}
+
+.plant_Tolerence .plantSalt li {
+    float: left;
+    margin-right: 19px;
+    margin-top: 10px;
+}
+
+/* 
+----------------------plantIdentification ul li-------------------------------------*/
+
+.plant_PlantSpread2 li {
+    margin-top: 10px;
+    float: left;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.plant_Persistence2 li {
+    float: left;
+    margin-right: 55px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.plant_Scent2 li {
+    float: left;
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.plant_LeafBladeLength li {
+    font-weight: bold;
+}
+
