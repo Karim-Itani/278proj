@@ -12,7 +12,7 @@
     <div id="allcontent">
 
         <body>
-            <header>
+        <header>
                 <div class="header">
                     <a href="index.html" class="logo">
                         <img src="images/logo.png">
@@ -51,17 +51,14 @@
                         <a href="contactus.html" class="contact">
                             Contact Us
                         </a>
-            </header>
-
-
-
             <div id="button">
                 <a href='Searchbyname.html'><button class="button1">Search By Name</button></a>
                 <a href='type here'><button class="button2">Search By Criteria</button></a>
                 <a href='type here'><button class="button3">Plant identification</button></a>
             </div>
+        </header>
 
-            <div class="container">
+            <!-- <div class="container">
                 <h1 class="first"><u>Search By Name</u></h1>
                 <div class="conone">
                     <br>
@@ -116,59 +113,23 @@
                         </a>
                         </li>
                     </ul>
-                </div>
             </div>
+            </div> 
             </div>
-            </div>
-
-            <div class="ui-widget">
-                <label for="recipe">Recipe:</label><br />
-                <input id="recipe">
-                <ul id="ingredients"></ul>
-            </div>
-            <script>
-                $(document).ready(function() {
-                    $("#recipe").autocomplete({
-                        source: async function(request, response) {
-                            let data = await fetch(`http://localhost:3000/search?query=${request.term}`)
-                                .then(results => results.json())
-                                .then(results => results.map(result => {
-                                    return {
-                                        label: result.name,
-                                        value: result.name,
-                                        id: result._id
-                                    };
-                                }));
-                            response(data);
-                        },
-                        minLength: 2,
-                        select: function(event, ui) {
-                            fetch(`http://localhost:3000/get/${ui.item.id}`)
-                                .then(result => result.json())
-                                .then(result => {
-                                    $("#ingredients").empty();
-                                    result.ingredients.forEach(ingredient => {
-                                        $("#ingredients").append(`<li>${ingredient}</li>`);
-                                    });
-                                });
-                        }
-                    });
-                });
-            </script>
+            </div>-->
 
 
+            
 
-
-
-
-
-
-
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
     </div>
 
 </html>
