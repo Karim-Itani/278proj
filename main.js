@@ -108,5 +108,4 @@ async function listDatabases(client) {
     databasesList.databases.forEach(db => {
         console.log(`- ${db.name}`);
     })
-server.use(BodyParser.json());
 }
