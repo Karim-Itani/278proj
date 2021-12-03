@@ -1,0 +1,60 @@
+// JavaScript Document
+
+
+function show_map(did) {
+   
+	$("#main_map *").addClass("disabled");
+	$("#map_" + did).removeClass("disabled");
+	$("#list_text *").addClass("mapactive");
+	$("#text_" + did).removeClass("mapactive");
+	 
+}
+
+
+$(function () {
+
+	$("#main_map img").click(function () {
+		$("#main_map *").addClass("disabled");
+		$(this).removeClass("disabled");
+		$("#list_text *").addClass("mapactive");
+		var id = $(this).attr("id").split('_');
+		id = id[1];
+		$("#text_" + id).removeClass("mapactive");
+	});
+	$("input[type='radio']:checked").addClass('active');
+});
+
+
+
+
+
+$(function () {
+
+ 
+
+	$(".clearstep0").click(function () {
+		//$("#main_map *").addClass("disabled");
+	});
+	$(".step3back").click(function () {
+		$(".step3next").show();
+		var id = $(".tabs .tabActiveHeader").attr('id').split('_');
+		id = Number(id[1]) - Number(1);
+		$(".tabs li").removeClass('tabActiveHeader');
+		$(".tabs #tabHeader_" + id).addClass('tabActiveHeader');
+		$(".tabpage").hide();
+		$("#tabpage_" + id).show();
+		if (id == 1)
+			$(this).hide();
+	});
+	$(".step3next").click(function () {
+		$(".step3back").show();
+		var id = $(".tabs .tabActiveHeader").attr('id').split('_');
+		id = Number(id[1]) + Number(1);
+		$(".tabs li").removeClass('tabActiveHeader');
+		$(".tabs #tabHeader_" + id).addClass('tabActiveHeader');
+		$(".tabpage").hide();
+		$("#tabpage_" + id).show();
+		if (id == 4)
+			$(this).hide();
+	});
+});

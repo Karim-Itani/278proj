@@ -265,32 +265,5 @@ hr {
     border-width: 1px;
     color: chartreuse;
 }
-
-.tit {
-    margin-left: 12px;
-    text-align: center;
-}
-
-.imgleft {
-    float: left;
-}
-
-.imgright {
-    display: block;
-    align-items: center;
-}
-
-.plant_sec {
-    display: inline;
-}
-.vl {
-    border-left: 2px solid  #333;
-    height: 250px;
-    position: absolute;
-    left: 51%;
-    margin-left: -3px;
-    top: 0;
-    margin-top: 600px;
-  }
-.plant_sec{float: left;}
-.plant_sec2{float: right;margin-left: 220px;margin-bottom: 200px;}
+.tit{text-align: center;}
+.txtalign{}

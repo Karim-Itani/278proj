@@ -1,0 +1,77 @@
+<div class="country_list">
+    <h3>Choose the Country</h3>
+    <ul id="list_text">
+        <li id="text_03" data-bind="click: chosenCountry()=='Algeria' ? getTemp('Algeria','03'):nothing(),click:function(){getTemp('Algeria','03')}" class="mapactive">Algeria</li>
+        <li id="text_22" data-bind="click: chosenCountry()=='Djibouti' ? getTemp('Djibouti','22'):nothing(),click:function(){getTemp('Djibouti','22')}" class="mapactive">Djibouti</li>
+        <li id="text_07" data-bind="click: chosenCountry()=='Egypt' ? getTemp('Egypt','07'):nothing(),click:function(){getTemp('Egypt','07')}" class="mapactive">Egypt</li>
+        <li id="text_10" data-bind="click: chosenCountry()=='Iraq' ? getTemp('Iraq','10'):nothing(),click:function(){getTemp('Iraq','10')}" class="mapactive">Iraq</li>
+        <li id="text_14" data-bind="click: chosenCountry()=='Jordan' ? getTemp('Jordan','14'):nothing(),click:function(){getTemp('Jordan','14')}" class="mapactive">Jordan</li>
+        <li id="text_16" data-bind="click: chosenCountry()=='Kuwait' ? getTemp('Kuwait','16'):nothing(),click:function(){getTemp('Kuwait','16')}" class="mapactive">Kuwait</li>
+        <li id="text_12" data-bind="click: chosenCountry()=='Lebanon' ? getTemp('Lebanon','12'):nothing(),click:function(){getTemp('Lebanon','12')}" class="mapactive">Lebanon</li>
+        <li id="text_06" data-bind="click: chosenCountry()=='Libya' ? getTemp('Libya','06'):nothing(),click:function(){getTemp('Libya','06')}" class="mapactive">Libya</li>
+        <li id="text_01" data-bind="click: chosenCountry()=='Mauritania' ? getTemp('Mauritania','01'):nothing(),click:function(){getTemp('Mauritania','01')}" class="mapactive">Mauritania</li>
+        <li id="text_04" data-bind="click: chosenCountry()=='Morroco' ? getTemp('Morroco','04'):nothing(),click:function(){getTemp('Morroco','04')}" class="mapactive">Morroco</li>
+
+        <li id="text_18" data-bind="click: chosenCountry()=='Oman' ? getTemp('Oman','18'):nothing(),click:function(){getTemp('Oman','18')}" class="mapactive">Oman</li>
+
+        <li id="text_11" data-bind="click: chosenCountry()=='Palestine' ? getTemp('Palestine','11'):nothing(),click:function(){getTemp('Palestine','11')}" class="mapactive">Palestine</li>
+        <li id="text_13" data-bind="click: chosenCountry()=='Qatar' ? getTemp('Qatar','13'):nothing(),click:function(){getTemp('Qatar','13')}" class="mapactive">Qatar</li>
+
+
+        <li id="text_15" data-bind="click: chosenCountry()=='SaudiArabia' ? getTemp('SaudiArabia','15'):nothing(),click:function(){getTemp('SaudiArabia','15')}" class="mapactive">SaudiArabia</li>
+
+        <li id="text_23" data-bind="click: chosenCountry()=='Somalia' ? getTemp('Somalia','23'):nothing(),click:function(){getTemp('Somalia','23')}" class="mapactive">Somalia</li>
+        <li id="text_08" data-bind="click: chosenCountry()=='Sudan' ? getTemp('Sudan','08'):nothing(),click:function(){getTemp('Sudan','08')}" class="mapactive">Sudan</li>
+        <li id="text_09" data-bind="click: chosenCountry()=='Syria' ? getTemp('Syria','09'):nothing(),click:function(){getTemp('Syria','09')}" class="mapactive">Syria</li>
+
+
+        <li id="text_05" data-bind="click: chosenCountry()=='Tunisia' ? getTemp('Tunisia','05'):nothing(),click:function(){getTemp('Tunisia','05')}" class="mapactive">Tunisia</li>
+
+
+
+        <li id="text_17" data-bind="click: chosenCountry()=='UAE' ? getTemp('UAE','17'):nothing(),click:function(){getTemp('UAE','17')}" class="mapactive">UAE</li>
+
+        <li id="text_19" data-bind="click: chosenCountry()=='Yemen' ? getTemp('Yemen','19'):nothing(),click:function(){getTemp('Yemen','19')}" class="mapactive">Yemen</li>
+
+
+
+
+
+    </ul>
+</div>
+<div class="country_map">
+    <div class="country_hldr" id="main_map">
+        <img id="map_01" class="disabled" src="/images/search/map/1.png" alt="" data-bind="click: chosenCountry()=='Mauritania' ? getTemp('Mauritania','01'):nothing(),click:function(){getTemp('Mauritania','01')}">
+        <img id="map_03" class="disabled" src="/images/search/map/3.png" alt="" data-bind="click: chosenCountry()=='Algeria' ? getTemp('Algeria','03'):nothing(),click:function(){getTemp('Algeria','03')}">
+        <img id="map_04" class="disabled" src="/images/search/map/4.png" alt="" data-bind="click: chosenCountry()=='Morroco' ? getTemp('Morroco','04'):nothing(),click:function(){getTemp('Morroco','04')}">
+        <img id="map_05" class="disabled" src="/images/search/map/5.png" alt="" data-bind="click: chosenCountry()=='Tunisia' ? getTemp('Tunisia','05'):nothing(),click:function(){getTemp('Tunisia','05')}">
+        <img id="map_06" class="disabled" src="/images/search/map/6.png" alt="" data-bind="click: chosenCountry()=='Libya' ? getTemp('Libya','06'):nothing(),click:function(){getTemp('Libya','06')}">
+        <img id="map_07" class="disabled" src="/images/search/map/7.png" alt="" data-bind="click: chosenCountry()=='Egypt' ? getTemp('Egypt','07'):nothing(),click:function(){getTemp('Egypt','07')}">
+        <img id="map_08" class="disabled" src="/images/search/map/8.png" alt="" data-bind="click: chosenCountry()=='Sudan' ? getTemp('Sudan','08'):nothing(),click:function(){getTemp('Sudan','08')}" />
+        <img id="map_09" class="disabled" src="/images/search/map/9.png" alt="" data-bind="click: chosenCountry()=='Syria' ? getTemp('Syria','09'):nothing(),click:function(){getTemp('Syria','09')}">
+        <img id="map_10" class="disabled" src="/images/search/map/10.png" alt="" data-bind="click: chosenCountry()=='Iraq' ? getTemp('Iraq','10'):nothing(),click:function(){getTemp('Iraq','10')}">
+        <img id="map_11" class="disabled" src="/images/search/map/11.png" alt="" data-bind="click: chosenCountry()=='Palestine' ? getTemp('Palestine','11'):nothing(),click:function(){getTemp('Palestine','11')}">
+        <img id="map_12" class="disabled" src="/images/search/map/12.png" alt="" data-bind="click: chosenCountry()=='Lebanon' ? getTemp('Lebanon','12'):nothing(),click:function(){getTemp('Lebanon','12')}">
+        <img id="map_13" class="disabled" src="/images/search/map/13.png" alt="" data-bind="click: chosenCountry()=='Qatar' ? getTemp('Qatar','13'):nothing(),click:function(){getTemp('Qatar','13')}">
+        <img id="map_14" class="disabled" src="/images/search/map/14.png" alt="" data-bind="click: chosenCountry()=='Jordan' ? getTemp('Jordan','14'):nothing(),click:function(){getTemp('Jordan','14')}">
+        <img id="map_15" class="disabled" src="/images/search/map/15.png" alt="" data-bind="click: chosenCountry()=='SaudiArabia' ? getTemp('SaudiArabia','15'):nothing(),click:function(){getTemp('SaudiArabia','15')}">
+        <img id="map_16" class="disabled" src="/images/search/map/16.png" alt="" data-bind="click: chosenCountry()=='Kuwait' ? getTemp('Kuwait','16'):nothing(),click:function(){getTemp('Kuwait','16')}">
+        <img id="map_17" class="disabled" src="/images/search/map/17.png" alt="" data-bind="click: chosenCountry()=='UAE' ? getTemp('UAE','17'):nothing(),click:function(){getTemp('UAE','17')}">
+        <img id="map_18" class="disabled" src="/images/search/map/18.png" alt="" data-bind="click: chosenCountry()=='Oman' ? getTemp('Oman','18'):nothing(),click:function(){getTemp('Oman','18')}">
+        <img id="map_19" style="z-index: 100000;" class="disabled"
+             src="/images/search/map/19.png" alt="" data-bind="click: chosenCountry()=='Yemen' ? getTemp('Yemen','19'):nothing(),click:function(){getTemp('Yemen','19')}">
+
+        <img id="map_22" class="disabled" src="/images/search/map/22.png" alt="" data-bind="click: chosenCountry()=='Djibouti' ? getTemp('Djibouti','22'):nothing(),click:function(){getTemp('Djibouti','22')}">
+        <img id="map_23" class="disabled" src="/images/search/map/23.png" alt="" data-bind="click: chosenCountry()=='Somalia' ? getTemp('Somalia','23'):nothing(),click:function(){getTemp('Somalia','23')}">
+
+    </div>
+</div>
+<div class="footer_link">
+    <span>
+        <input type="button" value="Reset All Fields" class="field_reset clearAll2" onclick="return window.location = self.location;" >
+    </span>
+</div>
+<div class="submit_button">
+    <input type="button" value="Submit" onclick="btnSubmit()" class="stepSubmit">
+</div>
+</div>

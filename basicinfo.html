@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+
+<head>
+    <link href="basicinfo.css" type="text/css" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<header>
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png">
+            <span class="header1">Landscape Design & Ecosystem Management</span>
+            <span class="header2">Faculty of Agriculture & Food Sciences</span>
+            <span class="header2">AUB Landscape Plant Database</span>
+        </a>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="sidehoverbar">
+            <a href="index.html" class="home">
+              Home
+          </a>
+
+            <a href="aboutus.html" class="about">
+              About Us
+          </a>
+
+            <a href="UsefulLinks.html" class="usefullinks">
+              Useful Links
+          </a>
+
+            <a href="#" class="gallery">
+              Image Gallery
+          </a>
+
+            <a href="popular.html" class="categories">
+              Popular Plant Categories
+          </a>
+
+            <a href="Glossary.html" class="glossary">
+            Glossary
+        </a>
+
+            <a href="contactus.html" class="contact">
+            Contact Us
+      </a>
+
+        </div>
+
+        <div id="button">
+            <a href='Searchbyname.html'><button class="button1">Search By Name</button></a>
+            <a href='type here'><button class="button2">Search By Criteria</button></a>
+            <a href='type here'><button class="button3">Plant identification</button></a>
+        </div>
+
+
+</header>
+<body><h1 class="plant">Plant type</h1>
+
+    <div class="imgcheckboxes">
+        <div class="imgleft">
+    
+            <ul>
+    
+                <li><input type="checkbox" id="cb1" />
+                    <label for="cb1"><img src="images/shape/CactusSucculent.png" /><h6 class="tit">Cactus/Succulent</h6></label>
+                </li>
+                <li><input type="checkbox" id="cb2" />
+                    <label for="cb2"><img src="images/shape/GroundCover.png" /><h6 class="tit">Ground Cover</h6></label>
+                </li>
+                <li><input type="checkbox" id="cb3" />
+                    <label for="cb3"><img src="images/shape/lawn-palnt.png" /><h6 class="tit">Lawn</h6></label>
+                </li>
+    
+                <li><input type="checkbox" id="cb4" />
+                    <label for="cb4"><img src="images/shape/Palms.png" /><h6 class="tit">Palm</h6></label>
+                </li>
+                <li><input type="checkbox" id="cb5" />
+                    <label for="cb5"><img src="images/shape/Shrub.png" /><h6 class="tit">Shrub</h6></label>
+                </li>
+                <li><input type="checkbox" id="cb6" />
+                    <label for="cb6"><img src="images/shape/Trees.png" /><h6 class="tit">Tree</h6></label>
+                </li>
+        </div>
+    <hr>
+    <div class="imgcheckboxes">
+        <div class="imgleft">
+            <h1>Light</h1>
+    
+            <ul>
+    
+                <li><input type="checkbox" id="rb1" />
+                    <label for="rb1"><img src="images/basicinfo/full.png" /><h6 class="tit">Full</h6></label>
+                </li>
+                <li><input type="checkbox" id="rb2" />
+                    <label for="rb2"><img src="images/basicinfo/part.png" /><h6 class="tit">Part</h6></label>
+                </li>
+                <li><input type="checkbox" id="rb3" />
+                    <label for="rb3"><img src="images/basicinfo/shade.png" /><h6 class="tit">Shade</h6></label>
+                </li>
+        </div>
+    </div>
+    <hr>
+    <div class="imgcheckboxes">
+        <div class="imgleft">
+            <h1>Light</h1>
+    
+            <ul>
+    
+                <li><input type="checkbox" id="kb1" />
+                    <label for="kb1"><img src="images/basicinfo/clay.png" /><h6 class="tit">Clay</h6></label>
+                </li>
+                <li><input type="checkbox" id="kb2" />
+                    <label for="kb2"><img src="images/basicinfo/sand.png" /><h6 class="tit">Sand</h6></label>
+                </li>
+                <li><input type="checkbox" id="kb3" />
+                    <label for="kb3"><img src="images/basicinfo/loam.png" /><h6 class="tit">Loam</h6></label>
+                </li>
+        </div>
+    </div>
+    <hr>
+    </div>
+    <div class="txtalign">
+        <div class="frui-size">
+        <h1>Soil PH<a href="/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip"></a></h1>
+        <div class="trunk_chackbox">
+            <ul>
+                <li style="font-weight: bold;">
+                    <span style="width: 100px; padding: 15px 0px 0px 25px">
+                        <img src="images/tree-vertical.png" alt="">
+                    </span><span>
+                        <input type="checkbox" id="Acidic" name="Soil PH" value="Acidic">
+                        <label for="Acidic"> Acidic(Ph<7) </label>
+                        <input type="checkbox" id="Neutral " name="Soil PH" value="Neutral">
+                        <label for="Neutral"> Neutral(pH=7) </label>
+                        <input type="checkbox" id="Alkaline" name="Soil PH" value="Alkaline">
+                        <label for="Alkaline">Alkaline(pH>7)</label>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="imgcheckboxes">
+        <div class="imgleft">
+            <h1>Light</h1>
+    
+            <ul>
+    
+                <li><input type="checkbox" id="tb1" />
+                    <label for="tb1"><img src="images/basicinfo/water-high.png" /><h6 class="tit">High</h6></label>
+                </li>
+                <li><input type="checkbox" id="tb2" />
+                    <label for="tb2"><img src="images/basicinfo/moderate.png" /><h6 class="tit">Moderate</h6></label>
+                </li>
+                <li><input type="checkbox" id="tb3" />
+                    <label for="tb3"><img src="images/basicinfo/water-low.png" /><h6 class="tit">Low</h6></label>
+                </li>
+        </div>
+    </div>
+    <hr>
+    <div class="Tolerance">
+        <h1>Tolerance</h1>
+        <h3>Heat</h3>
+        <form action="/action_page.php"></form>
+        <input type="radio" id="yes" name="Heat" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="No" name="Heat" value="No">
+        <label for="No">No</label>
+        <h3>Drought</h3>
+        <input type="radio" id="yes" name="Drought" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="No" name="Drought" value="No">
+        <label for="No">No</label>
+        <h3>Frost</h3>
+        <input type="radio" id="yes" name="Frost" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="No" name="Frost" value="No">
+        <label for="No">No</label>
+        <h3>Salt</h3>
+        <input type="radio" id="Good" name="Salt" value="Good">
+        <label for="Good">Good</label>
+        <input type="radio" id="Moderate" name="Salt" value="Moderate">
+        <label for="Moderate">Moderate</label>
+        <input type="radio" id="Poor" name="Salt" value="Poor">
+        <label for="Poor">Poor</label>
+    </div>
+    <hr>
+    <div class="Life Cycle">
+        <h1>Life Cycle</h1>
+        <form action="/action_page.php"></form>
+        <input type="radio" id="Annual" name="Life Cycle" value="Annual">
+        <label for="Annual">Annual</label>
+        <input type="radio" id="Perennial" name="Life Cycle" value="Perennial">
+        <label for="Perennial">Perennial</label>
+        <input type="radio" id="Biennial" name="Life Cycle" value="Biennial">
+        <label for="Biennial">Biennial</label>
+    </div>
+    <p>Click on the image to open web page.</p>
+  <!-- anchor tag starts here -->
+  <a href="https://www.geeksforgeeks.org/">
+    <img src=
+"https://media.geeksforgeeks.org/wp-content/uploads/gfg1-11.png" 
+    width="300" height="250" />
+  </a>
+  <!-- anchor tag ends here -->
+</body>
+  
+</html>
+</div>
+</body>
+</html>

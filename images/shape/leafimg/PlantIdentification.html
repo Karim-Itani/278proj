@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)https://landscapeplants.aub.edu.lb/Search/ByIdentification#Wizard -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="Keywords" content="plants in lebanon, Landscape architects">
+    <title>PlantIdentification</title>
+    <!--<base href="/">--><base href=".">
+    <link href="./PlantIdentification_files/checkbox.css" rel="stylesheet">
+<link href="./PlantIdentification_files/smart_wizard.css" rel="stylesheet">
+<link href="./PlantIdentification_files/style.css" rel="stylesheet">
+
+    <script src="./PlantIdentification_files/jquery-2.1.1.js.download"></script>
+
+    <script src="./PlantIdentification_files/modernizr-2.7.2.js.download"></script>
+
+    <script src="./PlantIdentification_files/jquery-ui-1.10.4.js.download"></script>
+
+    <script src="./PlantIdentification_files/jquery.smartWizard.js.download"></script>
+<script src="./PlantIdentification_files/custom.js.download"></script>
+
+    <script src="./PlantIdentification_files/knockout-2.1.0.debug.js.download"></script>
+<script src="./PlantIdentification_files/knockout.mapping-latest.debug.js.download"></script>
+
+</head>
+<body>
+    <div class="header">
+    <div class="wrapper">
+        <div class="header_left">
+            <a href="https://landscapeplants.aub.edu.lb/" class="logo">
+                <img src="./PlantIdentification_files/logo.png">
+                <span class="fontsmall">Landscape Design &amp; Ecosystem Management</span>
+                <span class="fontnormal">Faculty of Agriculture &amp; Food Sciences</span>
+                <span class="fontbig">AUB Landscape Plant Database</span>
+            </a>
+            <p><a href="https://landscapeplants.aub.edu.lb/" title="" class="backHome">Back to Homepage</a></p>
+        </div>
+        <div class="header_right">
+            <div id="IdentificationButton" class="header_right_section  H_S_active">
+                <a href="https://landscapeplants.aub.edu.lb/Search/ByIdentification#Wizard">
+                    <span>
+                        <img src="./PlantIdentification_files/search-identification.png" alt="">
+                    </span>
+                    <p>Plant Identification</p>
+                </a>
+            </div>
+            <div id="CriteriaButton" class="header_right_section ">
+                <a href="https://landscapeplants.aub.edu.lb/Search/ByCriteria#Wizard">
+                    <span>
+                        <img src="./PlantIdentification_files/search-criteria.png" alt="">
+                    </span>
+                    <p>Search By Criteria</p>
+                </a>
+            </div>
+            <div class="header_right_section">
+                <a href="https://landscapeplants.aub.edu.lb/Search/ByName">
+                    <span>
+                        <img src="./PlantIdentification_files/search-name.png" alt=""></span>
+                    <p>Search By Name</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<script type="text/javascript">
+    if (window.location.pathname.toLowerCase().indexOf('byidentification') > 0) {
+        $("#IdentificationButton").addClass('H_S_active');
+    }
+    else {
+        $("#CriteriaButton").addClass('H_S_active');
+    }
+</script>
+    
+<link rel="stylesheet" media="mediatype and|not|only (media feature)" href="./PlantIdentification_files/mystylesheet.css">
+<style>
+    a:hover {
+        color: #1695C0;
+    }
+
+    @media screen and (max-height: 705px) {
+        #showTip {
+            display: none;
+        }
+
+        #onHide {
+            margin-top: 15px;
+        }
+    }
+</style>
+<script src="./PlantIdentification_files/ByIdentification.smartWizard.js.download"></script>
+<div class="body_part" id="Wizard">
+
+    <div class="wrapper">
+        <div class="main_contain">
+            <div id="wizard1" class="swMain">
+                <ul class="anchor">
+
+                    <li><a href="https://landscapeplants.aub.edu.lb/#step-1" class="done" isdone="1" rel="1"><span>Size/Shape</span></a></li>
+                    <li><a href="https://landscapeplants.aub.edu.lb/#step-2" class="selected" isdone="1" rel="2"><span>Leaf</span></a></li>
+                    <li><a href="https://landscapeplants.aub.edu.lb/#step-3" class="done" isdone="1" rel="3"><span>Flower</span></a></li>
+                    <li><a href="https://landscapeplants.aub.edu.lb/#step-4" class="done" isdone="1" rel="4"><span>Fruit</span></a></li>
+                    <li><a href="https://landscapeplants.aub.edu.lb/#step-5" class="done" isdone="1" rel="5"><span>Trunk</span></a></li>
+                </ul>
+
+
+                
+                
+                
+                
+                
+            <div class="stepContainer" style="height: 616px;"><div id="step-1" class="content" style="display: none;">
+                    <form action="https://landscapeplants.aub.edu.lb/#">
+                        <div id="showTip" class="top_des">
+                            <p style="margin-top: 5px">
+                                <span>
+                                    <b>TIP: </b>Use the options below to search for plants based on a combination of characteristics.
+                                    <br>
+                                    If in doubt about any characteristic, don't hesitate to leave a field blank.<br>
+                                    For a definition of each search term, refer to the glossary for help.
+                                </span>
+                            </p>
+                        </div>
+
+                        <div id="onHide" class="col_left width407">
+                            <div class="plant_sec" id="plant_sec1">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant type</a></h1>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Cactus.isSelected() }, click: plantType.Cactus.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/CactusSucculent.png" alt="">
+                                    </span>
+                                    <p>Cactus/Succulent</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Groundcover.isSelected() }, click: plantType.Groundcover.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/GroundCover.png" alt="">
+                                    </span>
+                                    <p>Ground Cover</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Lawn.isSelected() }, click: plantType.Lawn.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/lawn-palnt.png" alt="">
+                                    </span>
+                                    <p>Lawn</p>
+                                </div>
+
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Palm.isSelected() }, click: plantType.Palm.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Palms.png" alt="">
+                                    </span>
+                                    <p>Palm</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Shrub.isSelected() }, click: plantType.Shrub.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Shrub.png" alt="">
+                                    </span>
+                                    <p>Shrub</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Tree.isSelected() }, click: plantType.Tree.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Trees.png" alt="">
+                                    </span>
+                                    <p>Tree</p>
+                                </div>
+                                <div class="plant_cat" data-bind="css: { plant_cat_selected: plantType.Vine.isSelected() }, click: plantType.Vine.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Vines.png" alt="">
+                                    </span>
+                                    <p>Vine</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div id="onHide" class="col_right width338">
+                            <div class="plant_sec" id="plant_sec5">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-C-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Canopy Shape</a></h1>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Weeping.isSelected() }, click: plantShape.Weeping.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Weeping.png" alt="">
+                                    </span>
+                                    <p>Weeping</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Upright.isSelected() }, click: plantShape.Upright.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Upright.png" alt="">
+                                    </span>
+                                    <p>Upright/Erect</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Vase.isSelected() }, click: plantShape.Vase.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Vase.png" alt="">
+                                    </span>
+                                    <p>Vase</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Pyramidal.isSelected() }, click: plantShape.Pyramidal.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Pyramidal.png" alt="">
+                                    </span>
+                                    <p>Pyramidal</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Round.isSelected() }, click: plantShape.Round.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Round.png" alt="">
+                                    </span>
+                                    <p>Rounded</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Columnar.isSelected() }, click: plantShape.Columnar.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Columnar.png" alt="">
+                                    </span>
+                                    <p>Columnar</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.oval.isSelected() }, click: plantShape.oval.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Oval.png" alt="">
+                                    </span>
+                                    <p>Oval</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Palm.isSelected() }, click: plantShape.Palm.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Palm.png" alt="">
+                                    </span>
+                                    <p>Palm</p>
+                                </div>
+                                <div class="plant_shape" data-bind="css: { plant_cat_selected: plantShape.Spreading.isSelected() }, click: plantShape.Spreading.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/Spreading.png" alt="">
+                                    </span>
+                                    <p>Spreading</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="onHide" class="col_right width225">
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant Height</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="font-weight: bold;">
+                                            <span style="width: 100px; padding: 15px 0px 0px 25px">
+                                                <img src="./PlantIdentification_files/tree-vertical.png" alt="">
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG31" id="checkboxG31" class="css-checkbox" data-bind=" checked: plantHeightRange.OvTwentyThree.isSelected">
+                                                <label for="checkboxG31" class="css-label2 bgright">&gt;23 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG32" id="checkboxG32" class="css-checkbox" data-bind=" checked: plantHeightRange.LeTwentyThree.isSelected">
+                                                <label for="checkboxG32" class="css-label2 bgright">15-23 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG33" id="checkboxG33" class="css-checkbox" data-bind=" checked: plantHeightRange.LeFifteen.isSelected">
+                                                <label for="checkboxG33" class="css-label2 bgright">8-15 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG34" id="checkboxG34" class="css-checkbox" data-bind=" checked: plantHeightRange.LeEight.isSelected">
+                                                <label for="checkboxG34" class="css-label2 bgright">5-8 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG35" id="checkboxG35" class="css-checkbox" data-bind=" checked: plantHeightRange.LeFive.isSelected">
+                                                <label for="checkboxG35" class="css-label2 bgright">3-5 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG159" id="checkboxG159" class="css-checkbox" data-bind=" checked: plantHeightRange.LeThree.isSelected">
+                                                <label for="checkboxG159" class="css-label2 bgright">1.5-3 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG36" id="checkboxG36" class="css-checkbox" data-bind=" checked: plantHeightRange.LeOnePointFive.isSelected">
+                                                <label for="checkboxG36" class="css-label2 bgright">1-1.5 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG37" id="checkboxG37" class="css-checkbox" data-bind=" checked: plantHeightRange.LeOne.isSelected">
+                                                <label for="checkboxG37" class="css-label2 bgright">0.5-1 (m)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG38" id="checkboxG38" class="css-checkbox" data-bind=" checked: plantHeightRange.LeZeroFive.isSelected">
+                                                <label for="checkboxG38" class="css-label2 bgright">0-0.5 (m)</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-P-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Plant Spread</a></h1>
+                                <div class="plant_chackbox" style="width: 120%;">
+                                    <ul>
+                                        <li style="text-align: center; padding-bottom: 10px;">
+                                            <span style="width: 200px;">
+                                                <img src="./PlantIdentification_files/tree-horizontal.png" alt="">
+                                            </span>
+                                        </li>
+                                        <li style="font-weight: bold;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG39" id="checkboxG39" class="css-checkbox" data-bind=" checked: plantSpreadRange.OverFifteen.isSelected">
+                                                <label for="checkboxG39" class="css-label2">&gt;15 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG40" id="checkboxG40" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessFifteen.isSelected">
+                                                <label for="checkboxG40" class="css-label2">10-15 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG41" id="checkboxG41" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessTen.isSelected">
+                                                <label for="checkboxG41" class="css-label2">8-10 (m)</label>
+                                            </span>
+                                        </li>
+                                        <li style="font-weight: bold;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG42" id="checkboxG42" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessEight.isSelected">
+                                                <label for="checkboxG42" class="css-label2">5-8 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG43" id="checkboxG43" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessFive.isSelected">
+                                                <label for="checkboxG43" class="css-label2">3-5 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG44" id="checkboxG44" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessThree.isSelected">
+                                                <label for="checkboxG44" class="css-label2">1.5-3 (m)</label>
+                                            </span>
+                                        </li>
+                                        <li style="font-weight: bold;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG49" id="checkboxG49" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessOnePointFive.isSelected">
+                                                <label for="checkboxG49" class="css-label2">1-1.5 (m)</label>
+                                            </span>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG45" id="checkboxG45" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessOne.isSelected">
+                                                <label for="checkboxG45" class="css-label2">0.5-1 (m)</label>
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG46" id="checkboxG46" class="css-checkbox" data-bind=" checked: plantSpreadRange.LessZeroFive.isSelected">
+                                                <label for="checkboxG46" class="css-label2">0-0.5 (m)</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_link">
+                            <span>
+                                <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                            </span><span>
+                                <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 1)" class="field_reset clearAll">
+                            </span>
+                        </div>
+                        <div class="submit_button">
+                            <input type="button" value="Submit" onclick="btnSubmitIdentification()" class="stepSubmit">
+                        </div>
+                    </form>
+                </div><div id="step-2" class="content" style="display: block;">
+                    <form action="https://landscapeplants.aub.edu.lb/#">
+                        <div class="top_des">
+                            <p style="margin-top: 5px">
+                                <span>
+                                    <b>TIP: </b>Use the options below to search for plants based on a combination of characteristics.
+                                    <br>
+                                    If in doubt about any characteristic, don't hesitate to leave a field blank.<br>
+                                    For a definition of each search term, refer to the glossary for help.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="inner_tab" id="tabContainer">
+                            <div class="tabs">
+                                <ul data-current="1">
+                                    <li id="tabHeader_1" class="tabActiveHeader">General</li>
+
+                                    <li id="tabHeader_2">Shape</li>
+                                    <li id="tabHeader_3">Margins</li>
+                                    <li id="tabHeader_4">Venation/Color</li>
+                                </ul>
+                            </div>
+                            <div class="tabscontent">
+                                <div class="tabpage" id="tabpage_1">
+                                    <div class="col_left">
+                                        <div class="plant_sec" id="plant_sec12">
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Leaf Type</a></h1>
+                                            <div class="leaf_type plant_cat_selected" data-bind="css: { plant_cat_selected: leafType.Simple.isSelected() }, click: leafType.Simple.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/simple.png" alt="">
+                                                </span>
+                                                <p>Simple</p>
+                                            </div>
+                                            <div class="leaf_type plant_cat_selected" data-bind="css: { plant_cat_selected: leafType.Trifoliate.isSelected() }, click: leafType.Trifoliate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Trifoliate.png" alt="">
+                                                </span>
+                                                <p>Trifoliate</p>
+                                            </div>
+                                            <div class="leaf_type plant_cat_selected" data-bind="css: { plant_cat_selected: leafType.PalmatelyCompound.isSelected() }, click: leafType.PalmatelyCompound.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Palmately.png" alt="">
+                                                </span>
+                                                <p>
+                                                    Palmately
+                                                    <br>
+                                                    Compound
+                                                </p>
+                                            </div>
+                                            <div class="leaf_type plant_cat_selected" data-bind="css: { plant_cat_selected: leafType.Costapalmate.isSelected() }, click: leafType.Costapalmate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Costapalmate.png" alt="">
+                                                </span>
+                                                <p>Costapalmate</p>
+                                            </div>
+                                            <div class="leaf_type plant_cat_selected" data-bind="css: { plant_cat_selected: leafType.EvenPinnatelyCompound.isSelected() }, click: leafType.EvenPinnatelyCompound.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Even-pinnately.png" alt="">
+                                                </span>
+                                                <p>
+                                                    Even-pinnately
+                                                    <br>
+                                                    Compound
+                                                </p>
+                                            </div>
+                                            <div class="leaf_type plant_cat_selected" data-bind="css: { plant_cat_selected: leafType.OddPinnatelyCompund.isSelected() }, click: leafType.OddPinnatelyCompund.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Odd-pinnately.png" alt="">
+                                                </span>
+                                                <p>
+                                                    Odd-pinnately
+                                                    <br>
+                                                    Compound
+                                                </p>
+                                            </div>
+                                            <div class="leaf_type" data-bind="css: { plant_cat_selected: leafType.BipinnatelyCompound.isSelected() }, click: leafType.BipinnatelyCompound.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Bipinnately.png" alt="">
+                                                </span>
+                                                <p>
+                                                    Bipinnately
+                                                    <br>
+                                                    Compound
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col_right">
+                                        <div class="plant_sec">
+
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Scent</a></h1>
+                                            <div class="plant_chackbox ">
+                                                <ul>
+                                                    <li>
+                                                        <span>
+                                                            <input type="radio" name="radio_scent" id="radio19" class="css-checkbox" value="1" data-bind=" checked: scent" previousvalue="checked">
+                                                            <label for="radio19" class="css-label">Pleasant</label>
+                                                        </span><span>
+                                                            <input type="radio" name="radio_scent" id="radio20" class="css-checkbox" value="2" data-bind=" checked: scent" previousvalue="false">
+                                                            <label for="radio20" class="css-label">Unpleasant</label>
+                                                        </span><span>
+                                                            <input type="radio" name="radio_scent" id="radio21" class="css-checkbox" value="3" data-bind=" checked: scent" previousvalue="false">
+                                                            <label for="radio21" class="css-label">No Fragrance</label>
+                                                        </span><!--span style="width: 20%">
+                                                            <input type="radio" name="radio_Scent" id="radio100" class="css-checkbox" value="N/A" data-bind=" checked: scent">
+                                                            <label for="radio100" class="css-label">N/A</label>
+                                                        </span-->
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="plant_sec">
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Persistence</a></h1>
+                                            <div class="plant_chackbox">
+                                                <ul>
+                                                    <li>
+                                                        <span>
+                                                            <input type="radio" name="radio_leafPersistance" id="radio16" class="css-checkbox" value="3" data-bind=" checked: leafPersistance" previousvalue="checked">
+                                                            <label for="radio16" class="css-label">Evergreen</label>
+                                                        </span><span>
+                                                            <input type="radio" name="radio_leafPersistance" id="radio17" class="css-checkbox" value="2" data-bind=" checked: leafPersistance " previousvalue="false">
+                                                            <label for="radio17" class="css-label">Semi Evergreen</label>
+                                                        </span><span>
+                                                            <input type="radio" name="radio_leafPersistance" id="radio18" class="css-checkbox" value="1" data-bind=" checked: leafPersistance" previousvalue="false">
+                                                            <label for="radio18" class="css-label">Deciduous</label>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="plant_sec" id="plant_sec11">
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Arrangement</a></h1>
+                                            <div class="leaf_venation2" data-bind="css: { plant_cat_selected: leafArrangement.Alternate.isSelected() }, click: leafArrangement.Alternate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Alternate.png" alt="">
+                                                </span>
+                                                <p>Alternate</p>
+                                            </div>
+                                            <div class="leaf_venation2" data-bind="css: { plant_cat_selected: leafArrangement.Spiral.isSelected() }, click: leafArrangement.Spiral.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Spiral.png" alt="">
+                                                </span>
+                                                <p>Spiral</p>
+                                            </div>
+                                            <div class="leaf_venation2" data-bind="css: { plant_cat_selected: leafArrangement.Opposite.isSelected() }, click: leafArrangement.Opposite.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Opposite.png" alt="">
+                                                </span>
+                                                <p>Opposite</p>
+                                            </div>
+                                            <div class="leaf_venation2" data-bind="css: { plant_cat_selected: leafArrangement.Whorled.isSelected() }, click: leafArrangement.Whorled.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Whorled.png" alt="">
+                                                </span>
+                                                <p>Whorled</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer_link">
+                                        <span>
+                                            <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                                        </span><span>
+                                            <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 2)" class="field_reset clearAll">
+                                        </span>
+                                    </div>
+                                </div>
+
+
+                                <div class="tabpage" id="tabpage_2" style="display: none;">
+                                    <div class="margin_leaf">
+                                        <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Shape</a></h1>
+                                        <div class="shape_leaf" id="plant_sec14">
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Needle.isSelected() }, click: leafShape.Needle.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Needle.png" alt="">
+                                                </span>
+                                                <p>Needle</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Scale.isSelected() }, click: leafShape.Scale.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Scale.png" alt="">
+                                                </span>
+                                                <p>Scale</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Linear.isSelected() }, click: leafShape.Linear.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Linear.png" alt="">
+                                                </span>
+                                                <p>Linear</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Awl.isSelected() }, click: leafShape.Awl.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Awl.png" alt="">
+                                                </span>
+                                                <p>Awl</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.SwordShaped.isSelected() }, click: leafShape.SwordShaped.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Sword.png" alt="">
+                                                </span>
+                                                <p>Sword</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Oblanceolate.isSelected() }, click: leafShape.Oblanceolate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Oblanceolate.png" alt="">
+                                                </span>
+                                                <p>Oblanceolate</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Oval.isSelected() }, click: leafShape.Oval.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Oval(1).png" alt="">
+                                                </span>
+                                                <p>Oval</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Lanceolate.isSelected() }, click: leafShape.Lanceolate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Lanceolate.png" alt="">
+                                                </span>
+                                                <p>Lanceolate</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Ovate.isSelected() }, click: leafShape.Ovate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Ovate.png" alt="">
+                                                </span>
+                                                <p>Ovate</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Obovate.isSelected() }, click: leafShape.Obovate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Obovate.png" alt="">
+                                                </span>
+                                                <p>Obovate</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Spatulate.isSelected() }, click: leafShape.Spatulate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Spatulate.png" alt="">
+                                                </span>
+                                                <p>Spatulate</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Oblong.isSelected() }, click: leafShape.Oblong.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Oblong.png" alt="">
+                                                </span>
+                                                <p>Oblong</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Rhomboid.isSelected() }, click: leafShape.Rhomboid.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Rhomboid.png" alt="">
+                                                </span>
+                                                <p>Rhomboid</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Deltoid.isSelected() }, click: leafShape.Deltoid.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Deltoid.png" alt="">
+                                                </span>
+                                                <p>Deltoid</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Cordate.isSelected() }, click: leafShape.Cordate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Cordate.png" alt="">
+                                                </span>
+                                                <p>Cordate</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Orbiculate.isSelected() }, click: leafShape.Orbiculate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Orbiculate.png" alt="">
+                                                </span>
+                                                <p>Orbiculate</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Fan.isSelected() }, click: leafShape.Fan.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Fan.png" alt="">
+                                                </span>
+                                                <p>Fan</p>
+                                            </div>
+                                            <div class="shape_leaf_hldr" data-bind="css: { plant_cat_selected: leafShape.Star.isSelected() }, click: leafShape.Star.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Star.png" alt="">
+                                                </span>
+                                                <p>Star</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer_link">
+                                        <span>
+                                            <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                                        </span><span>
+                                            <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 5)" class="field_reset clearAll">
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="tabpage" id="tabpage_3" style="display: none;">
+                                    <div class="margin_leaf" id="plant_sec13">
+                                        <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Margins</a></h1>
+                                        <div class="margin_leaf_hldr" style="height: 170px;" data-bind="css: { plant_cat_selected: leafMargin.Ciliate.isSelected() }, click: leafMargin.Ciliate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Ciliate.png" alt="">
+                                            </span>
+                                            <p>Ciliate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" style="height: 170px;" data-bind="css: { plant_cat_selected: leafMargin.Entire.isSelected() }, click: leafMargin.Entire.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Entire.png" alt="">
+                                            </span>
+                                            <p>Entire</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" style="height: 170px;" data-bind="css: { plant_cat_selected: leafMargin.Lobate.isSelected() }, click: leafMargin.Lobate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Lobed.png" alt="" style="height: 145px;">
+                                            </span>
+                                            <p>Lobed</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" style="height: 170px;" data-bind="css: { plant_cat_selected: leafMargin.Spiny.isSelected() }, click: leafMargin.Spiny.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Spiny.png" alt="" style="height: 142px;">
+                                            </span>
+                                            <p>Spiny</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" style="height: 170px;" data-bind="css: { plant_cat_selected: leafMargin.Dentate.isSelected() }, click: leafMargin.Dentate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Dentate.png" alt="" style="height: 145px;">
+                                            </span>
+                                            <p>Dentate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" style="height: 170px;" data-bind="css: { plant_cat_selected: leafMargin.Serrate.isSelected() }, click: leafMargin.Serrate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Serrate.png" alt="">
+                                            </span>
+                                            <p>Serrate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" style="margin-left: 80px;" data-bind="css: { plant_cat_selected: leafMargin.Revolute.isSelected() }, click: leafMargin.Revolute.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Revolute.png" alt="">
+                                            </span>
+                                            <p>Revolute</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.TerminalSpine.isSelected() }, click: leafMargin.TerminalSpine.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/TerminalSpine.png" alt="">
+                                            </span>
+                                            <p>Terminal Spine</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.Crenate.isSelected() }, click: leafMargin.Crenate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Crenate.png" alt="">
+                                            </span>
+                                            <p>Crenate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.Serrulate.isSelected() }, click: leafMargin.Serrulate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Serrulate.png" alt="">
+                                            </span>
+                                            <p>Serrulate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.DoubleSerrate.isSelected() }, click: leafMargin.DoubleSerrate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/DoubleSerrate.png" alt="">
+                                            </span>
+                                            <p>Double Serrate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.Undulate.isSelected() }, click: leafMargin.Undulate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Undulate.png" alt="">
+                                            </span>
+                                            <p>Undulate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.Pectinate.isSelected() }, click: leafMargin.Pectinate.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Pectinate.png" alt="">
+                                            </span>
+                                            <p>Pectinate</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.Cleft.isSelected() }, click: leafMargin.Cleft.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Cleft.png" alt="">
+                                            </span>
+                                            <p>Cleft</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.Incised.isSelected() }, click: leafMargin.Incised.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Incised.png" alt="">
+                                            </span>
+                                            <p>Incised</p>
+                                        </div>
+                                        <div class="margin_leaf_hldr" data-bind="css: { plant_cat_selected: leafMargin.Parted.isSelected() }, click: leafMargin.Parted.Click">
+                                            <span>
+                                                <img src="./PlantIdentification_files/Parted.png" alt="">
+                                            </span>
+                                            <p>Parted</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer_link">
+                                        <span>
+                                            <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                                        </span><span>
+                                            <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 4)" class="field_reset clearAll">
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div class="tabpage" id="tabpage_4" style="display: none;">
+                                    <div class="col_left width407">
+                                        <div class="plant_sec" id="plant_sec10">
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Venation</a></h1>
+                                            <div class="leaf_venation" data-bind="css: { plant_cat_selected: leafVenation.Brachidodrome.isSelected() }, click: leafVenation.Brachidodrome.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Brachidodrome.png" alt="">
+                                                </span>
+                                                <p>Brachidodrome</p>
+                                            </div>
+                                            <div class="leaf_venation" data-bind="css: { plant_cat_selected: leafVenation.Bowed.isSelected() }, click: leafVenation.Bowed.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Bowed.png" alt="">
+                                                </span>
+                                                <p>Bowed</p>
+                                            </div>
+                                            <div class="leaf_venation" data-bind="css: { plant_cat_selected: leafVenation.Parallel.isSelected() }, click: leafVenation.Parallel.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Parallel.png" alt="">
+                                                </span>
+                                                <p>Parallel</p>
+                                            </div>
+                                            <div class="leaf_venation" data-bind="css: { plant_cat_selected: leafVenation.Pinnate.isSelected() }, click: leafVenation.Pinnate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Pinnate.png" alt="">
+                                                </span>
+                                                <p>Pinnate</p>
+                                            </div>
+                                            <div class="leaf_venation" data-bind="css: { plant_cat_selected: leafVenation.NearlyInvisible.isSelected() }, click: leafVenation.NearlyInvisible.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/NearlyInvisible.png" alt="">
+                                                </span>
+                                                <p>Nearly Invisible</p>
+                                            </div>
+                                            <div class="leaf_venation" data-bind="css: { plant_cat_selected: leafVenation.Reticualte.isSelected() }, click: leafVenation.Reticualte.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Reticulate.png" alt="">
+                                                </span>
+                                                <p>Reticulate</p>
+                                            </div>
+                                            <div class="leaf_venation" data-bind="css: { plant_cat_selected: leafVenation.Palmate.isSelected() }, click: leafVenation.Palmate.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/Palmate.png" alt="" style="margin-top: 25px;">
+                                                </span>
+                                                <p>Palmate</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col_right width314">
+                                        <div class="plant_sec" id="plant_sec6">
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color in Growing Season</a></h1>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Green.isSelected() }, click: colorGrowingSeason.Green.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/green.png" alt="">
+                                                </span>
+                                                <p>Green</p>
+                                            </div>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Purple.isSelected() }, click: colorGrowingSeason.Purple.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/purple.png" alt="">
+                                                </span>
+                                                <p>Purple</p>
+                                            </div>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Red.isSelected() }, click: colorGrowingSeason.Red.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/red.png" alt="">
+                                                </span>
+                                                <p>Red</p>
+                                            </div>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Yellow.isSelected() }, click: colorGrowingSeason.Yellow.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/yellow.png" alt="">
+                                                </span>
+                                                <p>Yellow</p>
+                                            </div>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.BlueGreen.isSelected() }, click: colorGrowingSeason.BlueGreen.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/blue.png" alt="">
+                                                </span>
+                                                <p style="padding-top: 0px;">
+                                                    Blue/<br>
+                                                    Blue-green
+                                                </p>
+                                            </div>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Silver.isSelected() }, click: colorGrowingSeason.Silver.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/silver.png" alt="">
+                                                </span>
+                                                <p>Silver</p>
+                                            </div>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorGrowingSeason.Variegated.isSelected() }, click: colorGrowingSeason.Variegated.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/variegat.png" alt="">
+                                                </span>
+                                                <p>Variegated</p>
+                                            </div>
+                                        </div>
+                                        <div class="plant_sec" id="plant_sec7">
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color in Changing Season</a></h1>
+                                            <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Green.isSelected() }, click: colorChangingSeason.Green.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/green.png" alt="">
+                                                </span>
+                                                <p>Green</p>
+                                            </div>
+                                            <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Purple.isSelected() }, click: colorChangingSeason.Purple.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/purple.png" alt="">
+                                                </span>
+                                                <p>Purple</p>
+                                            </div>
+                                            <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Red.isSelected() }, click: colorChangingSeason.Red.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/red.png" alt="">
+                                                </span>
+                                                <p>Red</p>
+                                            </div>
+                                            <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Yellow.isSelected() }, click: colorChangingSeason.Yellow.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/yellow.png" alt="">
+                                                </span>
+                                                <p>Yellow</p>
+                                            </div>
+                                            <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Orange.isSelected() }, click: colorChangingSeason.Orange.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/orange.png" alt="">
+                                                </span>
+                                                <p>Orange</p>
+                                            </div>
+                                            <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Brown.isSelected() }, click: colorChangingSeason.Brown.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/brown.png" alt="">
+                                                </span>
+                                                <p>Brown</p>
+                                            </div>
+                                            <div class="color_cat2" data-bind="css: { plant_cat_selected: colorChangingSeason.Copper.isSelected() }, click: colorChangingSeason.Copper.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/copper.png" alt="">
+                                                </span>
+                                                <p>Copper</p>
+                                            </div>
+                                            <div class="color_cat" data-bind="css: { plant_cat_selected: colorChangingSeason.SameAsGrowing.isSelected() }, click: colorChangingSeason.SameAsGrowing.Click">
+                                                <span>
+                                                    <img src="./PlantIdentification_files/eason.png" alt="">
+                                                </span>
+                                                <p>
+                                                    Same as<br>
+                                                    growing season
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col_right width265">
+                                        <div class="plant_sec">
+                                            <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-L-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Leaf Blade Length</a></h1>
+                                            <div class="plant_chackbox">
+                                                <ul>
+                                                    <li style="font-weight: bold;">
+                                                        <span>
+                                                            <input type="checkbox" name="checkboxG71" id="checkboxG71" class="css-checkbox" data-bind=" checked: leafLengthRange.OverEighty.isSelected">
+                                                            <label for="checkboxG71" class="css-label2 bgright">&gt;80 (cm)</label>
+                                                            <br>
+                                                            <input type="checkbox" name="checkboxG72" id="checkboxG72" class="css-checkbox" data-bind=" checked: leafLengthRange.LessEighty.isSelected">
+                                                            <label for="checkboxG72" class="css-label2 bgright">50-80 (cm)</label>
+                                                            <br>
+                                                            <input type="checkbox" name="checkboxG73" id="checkboxG73" class="css-checkbox" data-bind=" checked: leafLengthRange.LessFifty.isSelected">
+                                                            <label for="checkboxG73" class="css-label2 bgright">30-50 (cm)</label>
+                                                            <br>
+                                                            <input type="checkbox" name="checkboxG74" id="checkboxG74" class="css-checkbox" data-bind=" checked: leafLengthRange.LessThirty.isSelected">
+                                                            <label for="checkboxG74" class="css-label2 bgright">20-30 (cm)</label>
+                                                            <br>
+                                                            <input type="checkbox" name="checkboxG75" id="checkboxG75" class="css-checkbox" data-bind=" checked: leafLengthRange.LessTwenty.isSelected">
+                                                            <label for="checkboxG75" class="css-label2 bgright">10-20 (cm)</label>
+                                                            <br>
+                                                            <input type="checkbox" name="checkboxG76" id="checkboxG76" class="css-checkbox" data-bind=" checked: leafLengthRange.LessTen.isSelected">
+                                                            <label for="checkboxG76" class="css-label2 bgright">5-10 (cm)</label>
+                                                            <br>
+                                                            <input type="checkbox" name="checkboxG77" id="checkboxG77" class="css-checkbox" data-bind=" checked: leafLengthRange.LessFive.isSelected">
+                                                            <label for="checkboxG77" class="css-label2 bgright">0.5 (cm)</label>
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="footer_link">
+                                        <span>
+                                            <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                                        </span><span>
+                                            <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 3)" class="field_reset clearAll">
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="submit_button">
+                            <a class="step3back" style="display: none;">Back</a>
+                            <input type="button" value="Submit" onclick="btnSubmitIdentification()" class="stepSubmit">
+                            <a class="step3next">Next</a>
+                        </div>
+                    </form>
+                </div><div id="step-3" class="content" style="display: none;">
+                    <form action="https://landscapeplants.aub.edu.lb/#">
+                        <div class="top_des">
+                            <p style="margin-top: 5px">
+                                <span>
+                                    <b>TIP: </b>Use the options below to search for plants based on a combination of characteristics.
+                                    <br>
+                                    If in doubt about any characteristic, don't hesitate to leave a field blank.<br>
+                                    For a definition of each search term, refer to the glossary for help.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec" id="plant_sec8">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color</a></h1>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.White.isSelected() }, click: flowerColor.White.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-white.png" alt="">
+                                    </span>
+                                    <p>White/Creamy</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Pink.isSelected() }, click: flowerColor.Pink.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-pink.png" alt="">
+                                    </span>
+                                    <p>Pink</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Purple.isSelected() }, click: flowerColor.Purple.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-purple.png" alt="">
+                                    </span>
+                                    <p>Purple</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Blue.isSelected() }, click: flowerColor.Blue.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-blue.png" alt="">
+                                    </span>
+                                    <p>Blue</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Red.isSelected() }, click: flowerColor.Red.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-red.png" alt="">
+                                    </span>
+                                    <p>Red</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Green.isSelected() }, click: flowerColor.Green.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-green.png" alt="">
+                                    </span>
+                                    <p>Green</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Yellow.isSelected() }, click: flowerColor.Yellow.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-yellow.png" alt="">
+                                    </span>
+                                    <p>Yellow</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Orange.isSelected() }, click: flowerColor.Orange.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-orange.png" alt="">
+                                    </span>
+                                    <p>Orange</p>
+                                </div>
+                                <div class="color_flower" data-bind="css: { plant_cat_selected: flowerColor.Brown.isSelected() }, click: flowerColor.Brown.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/f-brown.png" alt="">
+                                    </span>
+                                    <p>Brown</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Scent</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_flowerScent" id="radio22" class="css-checkbox" value="1" data-bind=" checked: flowerScent" previousvalue="false">
+                                                <label for="radio22" class="css-label">Pleasant</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerScent" id="radio23" class="css-checkbox" value="2" data-bind=" checked: flowerScent" previousvalue="checked">
+                                                <label for="radio23" class="css-label">Unpleasant</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerScent" id="radio24" class="css-checkbox" value="3" data-bind=" checked: flowerScent" previousvalue="false">
+                                                <label for="radio24" class="css-label">No Fragrance</label>
+                                            </span><!--span>
+                                                <input type="radio" name="radio_flowerScent" id="radio102" class="css-checkbox" value="N/A" data-bind=" checked: flowerScent">
+                                                <label for="radio102" class="css-label">N/A</label>
+                                            </span-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Season</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio25" class="css-checkbox" value="1" data-bind=" checked: flowerSeason" previousvalue="false">
+                                                <label for="radio25" class="css-label">Spring</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio26" class="css-checkbox" value="2" data-bind=" checked: flowerSeason" previousvalue="checked">
+                                                <label for="radio26" class="css-label">Summer</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio27" class="css-checkbox" value="3" data-bind=" checked: flowerSeason" previousvalue="false">
+                                                <label for="radio27" class="css-label">Fall</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio28" class="css-checkbox" value="4" data-bind=" checked: flowerSeason" previousvalue="false">
+                                                <label for="radio28" class="css-label">Winter</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerSeason" id="radio29" class="css-checkbox" value="5" data-bind=" checked: flowerSeason" previousvalue="false">
+                                                <label for="radio29" class="css-label">Year Round</label>
+                                            </span><!--span>
+                                                <input type="radio" name="radio_Season" id="radio103" class="css-checkbox" value="N/A" data-bind=" checked: flowerSeason">
+                                                <label for="radio103" class="css-label">N/A</label>
+                                            </span-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Showiness</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_flowerShowiness" id="radio30" class="css-checkbox" value="Yes" data-bind=" checked: flowerShowiness" previousvalue="false">
+                                                <label for="radio30" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_flowerShowiness" id="radio31" class="css-checkbox" value="No" data-bind=" checked: flowerShowiness" previousvalue="false">
+                                                <label for="radio31" class="css-label">No</label>
+                                            </span><!--span>
+                                                <input type="radio" name="radio_Showiness" id="radio104" class="css-checkbox" value="N/A" data-bind=" checked: flowerShowiness">
+                                                <label for="radio104" class="css-label">N/A</label>
+                                            </span-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_link">
+                            <span>
+                                <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                            </span><span>
+                                <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 6)" class="field_reset clearAll">
+                            </span>
+                        </div>
+                        <div class="submit_button">
+                            <input type="button" value="Submit" onclick="btnSubmitIdentification()" class="stepSubmit">
+                        </div>
+                    </form>
+                </div><div id="step-4" class="content" style="display: none;">
+                    <form action="https://landscapeplants.aub.edu.lb/#">
+                        <div class="top_des">
+                            <p style="margin-top: 5px">
+                                <span>
+                                    <b>TIP: </b>Use the options below to search for plants based on a combination of characteristics.
+                                    <br>
+                                    If in doubt about any characteristic, don't hesitate to leave a field blank.<br>
+                                    For a definition of each search term, refer to the glossary for help.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec" id="plant_sec9">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Color</a></h1>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Yellow.isSelected() }, click: fruitColor.Yellow.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-yellow.png" alt="">
+                                    </span>
+                                    <p>Yellow</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Red.isSelected() }, click: fruitColor.Red.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-red.png" alt="">
+                                    </span>
+                                    <p>Red</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Blue.isSelected() }, click: fruitColor.Blue.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-blue.png" alt="">
+                                    </span>
+                                    <p>Blue</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.White.isSelected() }, click: fruitColor.White.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-white.png" alt="">
+                                    </span>
+                                    <p>White</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Pink.isSelected() }, click: fruitColor.Pink.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-pink.png" alt="">
+                                    </span>
+                                    <p>Pink</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Purple.isSelected() }, click: fruitColor.Purple.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-purple.png" alt="">
+                                    </span>
+                                    <p>Purple</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Green.isSelected() }, click: fruitColor.Green.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-green.png" alt="">
+                                    </span>
+                                    <p>Green</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Grey.isSelected() }, click: fruitColor.Grey.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-gray.png" alt="">
+                                    </span>
+                                    <p>Gray</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Orange.isSelected() }, click: fruitColor.Orange.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-orange.png" alt="">
+                                    </span>
+                                    <p>Orange</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Brown.isSelected() }, click: fruitColor.Brown.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-brown.png" alt="">
+                                    </span>
+                                    <p>Brown</p>
+                                </div>
+                                <div class="color_fruit" data-bind="css: { plant_cat_selected: fruitColor.Black.isSelected() }, click: fruitColor.Black.Click">
+                                    <span>
+                                        <img src="./PlantIdentification_files/fruit-black.png" alt="">
+                                    </span>
+                                    <p>Black</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec" style="width: 40%;">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Showiness</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_fruitShowiness" id="radio32" class="css-checkbox" value="Yes" data-bind=" checked: fruitShowiness">
+                                                <label for="radio32" class="css-label">Yes</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitShowiness" id="radio33" class="css-checkbox" value="No" data-bind=" checked: fruitShowiness">
+                                                <label for="radio33" class="css-label">No</label>
+                                            </span><!--span style="width: 23%">
+                                                <input type="radio" name="radio_Showiness2" id="radio105" class="css-checkbox" value="N/A" data-bind=" checked: fruitShowiness">
+                                                <label for="radio105" class="css-label">N/A</label>
+                                            </span-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec" style="width: 40%;">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Fruit Type</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_fruitTypeCategory" id="radio34" class="css-checkbox" value="Dry" data-bind=" checked: fruitTypeCategory">
+                                                <label for="radio34" class="css-label">Dry</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitTypeCategory" id="radio35" class="css-checkbox" value="Fleshy" data-bind=" checked: fruitTypeCategory">
+                                                <label for="radio35" class="css-label">Fleshy</label>
+                                            </span><!--span>
+                                                <input type="radio" name="radio_FType" id="radio106" class="css-checkbox" value="N/A" data-bind=" checked: fruitTypeCategory">
+                                                <label for="radio106" class="css-label">N/A</label>
+                                            </span-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Season</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li>
+                                            <span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio36" class="css-checkbox" value="1" data-bind=" checked: fruitSeason">
+                                                <label for="radio36" class="css-label">Spring</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio37" class="css-checkbox" value="2" data-bind=" checked: fruitSeason">
+                                                <label for="radio37" class="css-label">Summer</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio38" class="css-checkbox" value="3" data-bind=" checked: fruitSeason">
+                                                <label for="radio38" class="css-label">Fall</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio39" class="css-checkbox" value="4" data-bind=" checked: fruitSeason">
+                                                <label for="radio39" class="css-label">Winter</label>
+                                            </span><span>
+                                                <input type="radio" name="radio_fruitSeason" id="radio40" class="css-checkbox" value="5" data-bind=" checked: fruitSeason">
+                                                <label for="radio40" class="css-label">Year Round</label>
+                                            </span><!--span>
+                                                <input type="radio" name="radio_Season2" id="radio107" class="css-checkbox" value="N/A" data-bind=" checked: fruitSeason">
+                                                <label for="radio107" class="css-label">N/A</label>
+                                            </!--span-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="plant_sec">
+                                <h1 style="padding-bottom: 20px;"><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-F-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Fruit Size</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="font-weight: bold;">
+                                            <span style="width: 100px; padding: 15px 0px 0px 25px">
+                                                <img src="./PlantIdentification_files/fruit-size.png" alt="">
+                                            </span><span>
+                                                <input type="checkbox" name="checkboxG54" id="checkboxG54" class="css-checkbox" data-bind=" checked: fruitSize.LessOnePointFive.isSelected">
+                                                <label for="checkboxG54" class="css-label2 bgright">0-1.5 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG55" id="checkboxG55" class="css-checkbox" data-bind=" checked: fruitSize.LessThree.isSelected">
+                                                <label for="checkboxG55" class="css-label2 bgright">1.5-3 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG56" id="checkboxG56" class="css-checkbox" data-bind=" checked: fruitSize.LessSeven.isSelected">
+                                                <label for="checkboxG56" class="css-label2 bgright">3-7 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG57" id="checkboxG57" class="css-checkbox" data-bind=" checked: fruitSize.LessTen.isSelected">
+                                                <label for="checkboxG57" class="css-label2 bgright">7-10 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG58" id="checkboxG58" class="css-checkbox" data-bind=" checked: fruitSize.LessTwenty.isSelected">
+                                                <label for="checkboxG58" class="css-label2 bgright">10-20 (cm)</label>
+                                                <br>
+                                                <input type="checkbox" name="checkboxG59" id="checkboxG59" class="css-checkbox" data-bind=" checked: fruitSize.overTwenty.isSelected">
+                                                <label for="checkboxG59" class="css-label2 bgright">&gt;20 (cm)</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_link">
+                            <span>
+                                <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                            </span><span>
+                                <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 7)" class="field_reset clearAll">
+                            </span>
+                        </div>
+                        <div class="submit_button">
+                            <input type="button" value="Submit" onclick="btnSubmitIdentification()" class="stepSubmit">
+                        </div>
+                    </form>
+                </div><div id="step-5" class="content" style="display: none;">
+                    <form action="https://landscapeplants.aub.edu.lb/#">
+                        <div class="top_des">
+                            <p style="margin-top: 5px">
+                                <span>
+                                    <b>TIP: </b>Use the options below to search for plants based on a combination of characteristics.
+                                    <br>
+                                    If in doubt about any characteristic, don't hesitate to leave a field blank.<br>
+                                    For a definition of each search term, refer to the glossary for help.
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col_left">
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-T-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Trunk Esthetic Value</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="padding-top: 20px;">
+                                            <span>
+                                                <input type="checkbox" name="checkboxG60" id="checkboxG60" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Showy.isSelected">
+                                                <label for="checkboxG60" class="css-label2">Showy</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG61" id="checkboxG61" class="css-checkbox" data-bind=" checked: trunkEstheticValue.NotShowy.isSelected">
+                                                <label for="checkboxG61" class="css-label2">Not Showy</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG62" id="checkboxG62" class="css-checkbox " data-bind=" checked: trunkEstheticValue.Smooth.isSelected">
+                                                <label for="checkboxG62" class="css-label2">Smooth Texture</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span style="width: 40%;">
+                                                <input type="checkbox" name="checkboxG63" id="checkboxG63" class="css-checkbox" data-bind=" checked: trunkEstheticValue.IntermediateTexture.isSelected">
+                                                <label for="checkboxG63" class="css-label2">Intermediate Texture</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG64" id="checkboxG64" class="css-checkbox" data-bind=" checked: trunkEstheticValue.RoughTexture.isSelected">
+                                                <label for="checkboxG64" class="css-label2">RoughTexture</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span style="width: 40%;">
+                                                <input type="checkbox" name="checkboxG65" id="checkboxG65" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Fissured.isSelected">
+                                                <label for="checkboxG65" class="css-label2">Deeply Fissured</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG66" id="checkboxG66" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Papery.isSelected">
+                                                <label for="checkboxG66" class="css-label2">Papery</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG67" id="checkboxG67" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Spines.isSelected">
+                                                <label for="checkboxG67" class="css-label2">Spines</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="checkbox" name="checkboxG68" id="checkboxG68" class="css-checkbox" data-bind=" checked: trunkEstheticValue.Colored.isSelected">
+                                                <label for="checkboxG68" class="css-label2">Colored</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col_right">
+                            <div class="plant_sec">
+                                <h1><a href="https://landscapeplants.aub.edu.lb/Pages/Glossary/#-C-" target="_blank" data-toggle="tooltip" title="click here to check term definition in Glossary">Crownshaft (for palms)</a></h1>
+                                <div class="plant_chackbox">
+                                    <ul>
+                                        <li style="padding-top: 20px;">
+                                            <span>
+                                                <input type="radio" name="radio_crownshaft" id="radio41" class="css-checkbox" value="Yes" data-bind=" checked: crownshaft" previousvalue="false">
+                                                <label for="radio41" class="css-label">Available</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <span>
+                                                <input type="radio" name="radio_crownshaft" id="radio42" class="css-checkbox" value="No" data-bind=" checked: crownshaft" previousvalue="false">
+                                                <label for="radio42" class="css-label">Not available</label>
+                                            </span>
+                                            <br>
+                                            <br>
+                                            <!--span>
+                                                <input type="radio" name="radio_crownshaft" id="radio108" class="css-checkbox" value="N/A" data-bind=" checked: crownshaft">
+                                                <label for="radio108" class="css-label">N/A</label>
+                                            </!--span-->
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer_link">
+                            <span>
+                                <input type="button" value="Reset All Fields" class="field_reset" onclick="return window.location = self.location;">
+                            </span><span>
+                                <input type="button" value="Clear this Panel Only" onclick="clearTab(2, 8)" class="field_reset clearAll">
+                            </span>
+                        </div>
+                        <div class="submit_button">
+                            <input type="button" value="Submit" onclick="btnSubmitIdentification()" class="stepSubmit">
+                        </div>
+                    </form>
+                </div></div><div class="actionBar"><div class="msgBox"><div class="content"></div><a href="https://landscapeplants.aub.edu.lb/#" class="close">X</a></div><div class="loader">Loading</div><a href="https://landscapeplants.aub.edu.lb/#" class="buttonNext" style="display: block;">Next</a><a href="https://landscapeplants.aub.edu.lb/#" class="buttonPrevious" style="display: block;">Back</a></div></div>
+            <div class="footer"></div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $("input[type='radio']").click(function () {
+        var previousValue = $(this).attr('previousValue');
+        var name = $(this).attr('name');
+
+        if (previousValue == 'checked') {
+            $(this).removeAttr('checked');
+            $(this).attr('previousValue', false);
+            viewModel[name.substring(6)] = ko.observable();
+            ko.applyBindings(viewModel);
+        }
+        else {
+            $("input[name=" + name + "]:radio").attr('previousValue', false);
+            $(this).attr('previousValue', 'checked');
+        }
+    });
+</script>
+
+<script src="./PlantIdentification_files/SearchViewModel.js.download"></script>
+
+    <script>
+        ko.applyBindings(viewModel);
+    </script>
+
+    
+    <script>
+        window.onload = function () {
+            $('.step3back').hide();
+            $('.step3next').show();
+            // get tab container
+            var container = document.getElementById("tabContainer");
+            // set current tab
+            var navitem = container.querySelector(".tabs ul li");
+            //store which tab we are on
+            var ident = navitem.id.split("_")[1];
+            navitem.parentNode.setAttribute("data-current", ident);
+            //set current tab with class of activetabheader
+            navitem.setAttribute("class", "tabActiveHeader");
+
+            //hide two tab contents we don't need
+            var pages = container.querySelectorAll(".tabpage");
+            for (var i = 1; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+
+            //this adds click event to tabs
+            var tabs = container.querySelectorAll(".tabs ul li");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].onclick = displayPage;
+            }
+        }
+
+        // on click of one of tabs
+        function displayPage() {
+            var current = this.parentNode.getAttribute("data-current");
+            //remove class of activetabheader and hide old contents
+            document.getElementById("tabHeader_" + current).removeAttribute("class");
+            document.getElementById("tabpage_" + current).style.display = "none";
+
+            var ident = this.id.split("_")[1];
+            //add class of activetabheader to new active tab and show contents
+            this.setAttribute("class", "tabActiveHeader");
+            document.getElementById("tabpage_" + ident).style.display = "block";
+            this.parentNode.setAttribute("data-current", ident);
+            if (ident == 1) {
+                $('.step3back').hide();
+                $('.step3next').show();
+            }
+            else if (ident == 4) {
+                $('.step3back').show();
+                $('.step3next').hide();
+            }
+            else {
+                $('.step3back').show();
+                $('.step3next').show();
+            }
+        }
+        $(document).ready(function () {
+            //  Wizard 1  	
+            $('#wizard1').smartWizard({
+                transitionEffect: 'fade',
+                onFinish: onFinishCallback,
+                onLeaveStep: leaveAStepCallback,
+            });
+            function leaveAStepCallback(obj, context) {
+                // To check and enable finish button if needed
+                if (context.fromStep >= 2) {
+                    $('#wizard1').smartWizard('enableFinish', true);
+                }
+                return true;
+            }
+            //  Wizard 2
+            $('#wizard2').smartWizard({ transitionEffect: 'slide', onFinish: onFinishCallback });
+            function onFinishCallback() {
+                alert('Finish Called');
+            }
+            $(".anchor a").removeClass('disabled');
+            $(".anchor a").addClass('done');
+            $(".anchor a").attr('isdone', 1);
+            $(".weather_color").click(function () {
+                $(".weather_color").removeClass("active");
+                $(this).addClass("active");
+            });
+        });
+
+    </script>
+
+
+
+</body></html>
