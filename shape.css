@@ -213,7 +213,7 @@ input[type="checkbox"][id^="cb"] {
     user-select: none;
 }
 
-label::before {
+.imgcheckboxes label::before {
     background-color: white;
     color: white;
     content: " ";
@@ -231,7 +231,7 @@ label::before {
     transform: scale(0);
 }
 
-label img {
+.imgcheckboxes label img {
     height: 60px;
     width: 60px;
     transition-duration: 0.2s;
